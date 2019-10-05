@@ -1,0 +1,125 @@
+.full_wrapper {
+  display: block;
+  width: 100%;
+  height: 10150px;
+  background: #131313;
+  background-size: cover;
+}
+
+.page_wrapper {
+  display: block;
+  position: relative;
+  width: 1438px;
+  height: 100%;
+  background: #C4C4C4;
+  background-size: cover;
+}
+
+.header {
+  position: relative;
+  display: block;
+  height: 0.82%;
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 99.18%;
+  background: #131313;
+}
+
+.header_box {
+  position: relative;
+  height: 37px;
+  width: 1256px;
+  display: flex;
+  left: 5.7%;
+  right: 6.95%;
+  top: 0.24%;
+  bottom: 99.4%;
+}
+.header_box--navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header_box--navbar--navbar_list {
+  display: inline;
+}
+
+.main_content {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 98.14%;
+}
+
+.question_location {
+  position: relative;
+  width: 1440px;
+  height: 953.9px;
+  left: -0.07%;
+  right: -0.07%;
+  top: 89.3%;
+  bottom: 1.31%;
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+}
+
+.footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1.31%;
+  left: -0.07%;
+  right: -0.07%;
+  top: 98.69%;
+  bottom: 0%;
+  background: #181818;
+}
+.footer--box {
+  display: flex;
+  height: 37px;
+  width: 1256px;
+}
+.footer--box--logo {
+  display: block;
+  left: 6.34%;
+  right: 81.16%;
+  top: 99.29%;
+  bottom: 0.61%;
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+.footer--box--call {
+  display: block;
+  left: 70.6%;
+  right: 20.64%;
+  top: 99.29%;
+  bottom: 0.55%;
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  text-decoration-line: underline;
+  color: #E3B873;
+}
+.footer--box--button {
+  display: block;
+  left: 82.49%;
+  right: 6.31%;
+  top: 99.17%;
+  bottom: 0.47%;
+  background: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  font-family: FuturaDemiC, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */
