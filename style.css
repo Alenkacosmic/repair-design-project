@@ -18,7 +18,7 @@
 .header {
   position: relative;
   display: block;
-  height: 83px;
+  height: 0.82%;
   width: 100%;
   left: 0%;
   right: 0%;
@@ -67,12 +67,11 @@
   font-family: FuturaBookC, sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
-  text-decoration: none;
   text-transform: uppercase;
 }
-.nav_box--navbar--list--item::first-child {
-  color: #E3B873;
+.nav_box--navbar--list--item a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .nav_box--call {
   display: block;
@@ -92,6 +91,7 @@
   height: 37px;
   width: 161px;
   padding: 0;
+  border: none;
   background: #E3B873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
@@ -108,25 +108,25 @@
   display: block;
   position: relative;
   width: 100%;
-  height: 755px;
+  height: 97.87%;
   margin: 0;
-  background: #131313;
+  background: #FFFFFF;
 }
 
 .intro_section {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 755px;
+  height: 7.6%;
   margin: 0;
+  background: #131313;
 }
 .intro_section--instagram {
   display: block;
   position: relative;
-  height: 707px;
+  height: 100%;
   width: 5.7%;
   margin: 0;
-  background: #131313;
 }
 .intro_section--instagram--cold {
   position: relative;
@@ -154,19 +154,65 @@
 }
 .intro_section--introduction {
   display: block;
-  position: relative;
-  height: 707px;
+  height: 100%;
   width: 94.3%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7)), url(./assets/images/fronPagePic.png);
+  background-image: url(./assets/images/FrontPagePic.png);
   background-size: cover;
 }
 .intro_section--introduction--text {
-  position: relative;
   display: block;
+  justify-content: flex-start;
+  height: 105px;
+  width: 49.9%;
+  left: 4.4%;
+  top: 194px;
+}
+.intro_section--introduction--text--one {
+  display: inline-block;
+  margin: 0;
+  padding-right: 15%;
+  font-family: Yeseva One, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.intro_section--introduction--text--two {
+  display: inline-block;
+  margin: 0;
+  padding-right: 25%;
+  font-family: FuturaBookC, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  color: #FFFFFF;
 }
 .intro_section--introduction--buttons {
-  position: relative;
   display: flex;
+  height: 51px;
+  width: 35%;
+  top: 10%;
+  left: 10%;
+  justify-content: space-between;
+}
+.intro_section--introduction--buttons--calculate {
+  position: relative;
+  display: block;
+  background: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  width: 47.5%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: FuturaDemiC, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  justify-content: center;
+  color: #FFFFFF;
 }
 .intro_section--scroll {
   display: flex;
@@ -178,15 +224,61 @@
   z-index: 10;
 }
 
+.completed_projects {
+  display: flex;
+  height: 6.7%;
+  width: 100%;
+  background: #131313;
+}
+
+.online_control {
+  display: block;
+  width: 100%;
+  height: 10.9%;
+}
+
+.repair_types {
+  display: block;
+  width: 100%;
+  height: 8.6%;
+}
+
+.order_cycle {
+  display: flex;
+  width: 100%;
+  height: 8.9%;
+  background: url(./assets/images/whiteBackground.png);
+}
+
+.fantasies {
+  display: grid;
+  width: 100%;
+  height: 10.2%;
+}
+
+.design_project {
+  display: grid;
+  width: 100%;
+  height: 17.6%;
+}
+
+.team {
+  display: block;
+  width: 100%;
+  height: 9.2%;
+}
+
+.clients {
+  display: block;
+  width: 100%;
+  height: 7.9%;
+}
+
 .question_location {
   position: relative;
-  width: 1440px;
-  height: 953.9px;
-  left: -0.07%;
-  right: -0.07%;
-  top: 89.3%;
-  bottom: 1.31%;
-  background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+  width: 100%;
+  height: 12.4%;
+  background-color: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
   background-image: url(./assets/images/imageBackgroundBuildings.png);
   background-repeat: no-repeat;
   background-size: cover;
