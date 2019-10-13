@@ -1,9 +1,11 @@
 .full_wrapper {
-    display: block;    
+    display: flex;    
     width: 100%;
-    height: 10150px;
+    height: 100%;
+    justify-content: center;
     background: #504141;
     background-size: cover;
+
 }
 
 .page_wrapper {
@@ -17,61 +19,66 @@
 
 .header {
     position: relative;
-    display: block;
-    height: 0.82%;
-    width: 100%;
+    display: flex;
+    height: 83px;
+    max-width: 100%;
     left: 0%;
     right: 0%;
     top: 0%;
     bottom: 99.18%;
-    background: #131313;
+    background: #010101;
     align-items: center;
 }
 
 .nav_box {
     position: absolute;
     height: 37px;
-    width: 1256px;
+    width: 90%;
     display: flex;
     left: 5.7%;
-    right: 6.95%;
     top: 23%;
     justify-content: space-between;
     align-items: center;
 
     &--logo {
-        display: block;
-        left: 6.34%;
-        right: 81.16%;
-        top: 99.29%;
-        bottom: 0.61%;
-        font-family: FuturaDemiC, sans-serif;
-        font-size: 14px;
-        line-height: 16px;
-        text-transform: uppercase;
-        color: #E3B873;
+        display: inline-block;
+        max-width: 17.50%;
+        position: relative;
+
+        h1 { 
+            font-family: FuturaDemiC, sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #E3B873;
+        }
         
     }
 
     &--navbar {
-        display: block;
+        display: flex;
         justify-content: space-between;
+        position: relative;
+        width: 50%;
+        height: 100%;
 
         &--list {
             display: flex;
-            width: 582px;
+            position: absolute;
+            width: 100%;
+            margin-top: 2%;
             height: 12px;
+            padding: 0;
             text-align: center;
             justify-content: space-between;
-            
 
             &--item {
                 display: inline;
                 font-family: FuturaBookC, sans-serif;
                 font-size: 14px;
                 line-height: 16px;
-                
                 text-transform: uppercase;
+                text-decoration: none;
 
                 a {
                     text-decoration: none;
@@ -83,11 +90,11 @@
 
     &--call {
         display: block;
-        left: 70.6%;
-        right: 20.64%;
-        top: 99.29%;
-        bottom: 0.55%;
-        font-family: FuturaDemiC;
+        position: relative;
+        max-width: 10.03%;
+        height: 100%;
+        padding-top: 1%;
+        font-family: FuturaDemiC, sans-serif;
         font-size: 14px;
         line-height: 16px;
         text-align: right;
@@ -98,8 +105,8 @@
     &--button {
         display: block;
         height: 37px;
-        width: 161px;
-        padding: 0;
+        width: 12.81%;
+        right: 2%;
         border: none;
         background: #E3B873;
         box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -118,7 +125,7 @@
     display: block;
     position: relative;
     width: 100%;
-    height: 97.87%;
+    height: 10067px;
     margin: 0;
     background: #FFFFFF;
 }
@@ -127,9 +134,9 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 7.6%;
+    height: 755px;
     margin: 0;
-    background: #131313;
+    background: #010101;
 
     &--instagram {
         display: block;
@@ -175,16 +182,16 @@
 
         &--text {
             display: block;
-            justify-content: flex-start;
-            height: 105px;
-            width: 49.9%;
-            left: 4.4%;
-            top: 194px;
+            height: 30.13%;
+            width: 49.8%;
+            margin-left: 4.42%;
+            margin-top: 17.45%;
 
             &--one {
                 display: inline-block;
                 margin: 0;
-                padding-right: 15%;
+                width: 85%;
+                height: 49.3%;
                 font-family: Yeseva One, serif;
                 font-style: normal;
                 font-weight: normal;
@@ -192,12 +199,17 @@
                 line-height: 53px;
                 text-transform: uppercase;
                 color: #FFFFFF;
+
+                span {
+                    color: #E3B873;;
+                }
             }
 
             &--two {
                 display: inline-block;
+                width: 74.54%;
+                height: 41.78%;
                 margin: 0;
-                padding-right: 25%;
                 font-family: FuturaBookC, sans-serif;
                 font-size: 22px;
                 line-height: 30px;
@@ -206,11 +218,11 @@
         }
 
         &--buttons {
-            
             display: flex;
-            height: 51px;
+            height: 7.21%;
             width: 35%;
-            top: 10%;
+            margin-left: 4.42%;
+            margin-top: 2.5%;
             left: 10%;
             justify-content: space-between;
 
@@ -232,76 +244,280 @@
                 justify-content: center;
                 color: #FFFFFF;
             }
+
+            &--submit {
+                position: relative;
+                display: block;
+                border: 1px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 2px;
+                width: 47.5%;
+                height: 100%;
+                background-color: transparent;
+                padding: 0;
+                margin: 0;
+                font-family: FuturaDemiC, sans-serif;
+                font-size: 13px;
+                line-height: 15px;
+                text-align: center;
+                justify-content: center;
+                color: #FFFFFF;
+            }
         }
     }
 
-    &--scroll {
+    &--scroll_down {
         display: flex;
         position: absolute;
+        justify-content: center;
+        align-items: center;
         height: 97px;
         width: 17.15%;
-        top: 10px;
-        color: red;
+        top: 7%;
         z-index: 10;
+        background-color: #010101;
+
+        &--scroll_text {
+            font-family: Yeseva One, serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            margin-right: 5%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
 
     }
 }
 
 .completed_projects {
     display: flex;
-    height: 6.7%;
+    height: 666px;
     width: 100%;
-    background: #131313;
+    background: #010101;
+    background-size: cover;
+
+    &--description {
+        display: block;
+        width: 41%;
+        height: 482px;
+        margin-top: 120px;
+
+        &--heading {
+            display: flex;
+            height: 86px;
+            width: 42%;
+            margin-left: 15%;
+
+            &--logo {
+                font-family: Yeseva One, serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 27px;
+                line-height: 37px;
+                letter-spacing: -0.07em;
+                text-transform: uppercase;
+                color: #E3B873;
+            }
+            
+            &--underline {
+                padding-top: 55px;
+            }
+        }
+
+        &--text {
+            display: flex;
+            flex-wrap: wrap;
+            height: 396px;
+            width: 75%;
+            margin-left: 15%;
+            align-content: flex-start;
+
+            &--main {
+                display: block;
+                height: 86px;
+                width: 98%;
+                margin-top: 10px;
+                font-family: FuturaBookC;
+                font-size: 18px;
+                line-height: 29px;
+                color: #FFFFFF;
+            }
+
+            &--cathegory {
+                display: inline;
+                height: 25px;
+                width: 43%;
+                margin-top: 45px;
+                font-family: Yeseva One, serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: #E3B873;
+            }
+
+            &--explain {
+                display: block;
+                height: 50px;
+                width: 28%;
+                margin-right: 15%;
+                font-family: FuturaBookC;
+                font-size: 15px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+
+            &--slider {
+                display: inline-block;
+                height: 59px;
+                width: 100%;
+                padding-top: 25px;
+
+                &--dot {
+                    cursor: pointer;
+                    height: 12px;
+                    width: 12px;
+                    margin: 0 12px;
+                    background-color: #FFFFFF;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+
+                &--turn {
+                    cursor: pointer;
+                    height: 15px;
+                    width: 5%;
+                    margin: 0 12px;
+                }
+            }
+        }
+
+    }
+
+    &--show {
+        display: block;
+        width: 59%;
+
+        &--cities {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            height: 50px;
+            width: 80%;
+            margin-top: 3%;
+            margin-bottom: 5%;
+
+            &--list {
+                display: flex;
+                justify-content: space-between;
+                height: 35px;
+                width: 100%;
+                padding: 0;
+                align-items: flex-end;
+
+                &--item {
+                    display: block;
+                    font-family: Yeseva One, serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: rgba(255, 255, 255, 0.3);
+                }
+            }
+        }
+
+        &--rooms{
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 482px;
+
+            img {
+                width: 80%;
+                height: 100%;
+                margin-right: 2%;
+            }
+
+            &--press_me {
+                cursor: pointer;
+                position: absolute;
+                height: 92px;
+                width: 6.45%;
+                margin-top: 24%;
+                margin-left: 93%;
+                padding: 0;
+                border: 0;
+                background-color: transparent;
+                background-image: url(./assets/images/button-design.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+        }
+    }
+
 }
 
 .online_control {
     display: block;
     width: 100%;
-    height: 10.9%;
+    height: 1100px;
+    background: linear-gradient(#010101 50%, #010101 50%);
+    background-size: 100% 385px;
+    background-repeat: no-repeat;
 }
 
 .repair_types {
     display: block;
     width: 100%;
-    height: 8.6%;
+    height: 854px;
 }
 
 .order_cycle {
     display: flex;
     width: 100%;
-    height: 8.9%;
+    height: 810px;
     background: url(./assets/images/whiteBackground.png);
+    background-repeat: no-repeat;
 }
 
 .fantasies {
     display: grid;
     width: 100%;
-    height: 10.2%;
+    height: 1170px;
 }
 
 .design_project {
     display: grid;
     width: 100%;
-    height: 17.6%;
+    height: 1680px;
 }
 
 .team {
     display: block;
     width: 100%;
-    height: 9.2%;
+    height: 950px;
 }
 
 .clients {
     display: block;
     width: 100%;
-    height: 7.9%;
+    height: 750px;
 }
 
 .question_location {
     position: relative;
     width: 100%;
-    height: 12.4%;
-    background-color: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+    height: 1200px;
+    background-color: #131313;
     background-image: url(./assets/images/imageBackgroundBuildings.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -311,11 +527,7 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 1.31%;
-    left: -0.07%;
-    right: -0.07%;
-    top: 98.69%;
-    bottom: 0%;
+    height: 132px;
     background: #181818;    
     align-items: center;
 }
