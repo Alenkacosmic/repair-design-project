@@ -473,6 +473,44 @@
     background: linear-gradient(#010101 50%, #010101 50%);
     background-size: 100% 385px;
     background-repeat: no-repeat;
+
+    &--logo {
+        display: block;
+        height: 82px;
+        width: 14%;
+        justify-content: center;
+        margin-left: 45%;
+        text-align: center;
+
+        &--name{
+            display: block;
+            width: 100%;
+            height: 40px;
+            padding-top: 10px;
+            font-family: Yeseva One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        &--item {
+            display: block;
+            position: relative;
+            margin-top: -25px;
+            
+        }
+    }
+
+    &--video {
+        display: block;
+        height: 434px;
+        width: 56.74%;
+        margin-top: 32px;
+    }
 }
 
 .repair_types {
@@ -499,6 +537,7 @@
     display: grid;
     width: 100%;
     height: 1680px;
+
 }
 
 .team {
