@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./assets/fonts-desktop/demo.html">
     <title>Best-Repairs</title>
 </head>
-<body class="full_wrapper">
-    <div class="page_wrapper">
+<body class="page_wrapper">
         <header class="header">
             <div class="nav_box">
                 <div class="nav_box--logo"><h1>IC "Repair Design Project"</h1></div>
@@ -91,19 +90,25 @@
                     <span class="online_control--logo--name">online control</span>
                     <img src="./assets/images/online-control.svg" alt="camera logo" class="online_control--logo--item">
                 </div>
-                <div class="online_control--video"><iframe src="" frameborder="0"></iframe></div>
+                <div class="online_control--video">
+                    <iframe width="817" height="434" src="https://www.youtube.com/embed/e98dzGwAzfQ?start=141" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 <div class="online_control--text">
-                    <img src="" alt="">
+                    <img class="online_control--text--line" src="./assets/images/control-underline.png" alt="undeline line">
+                    <span class="online_control--text--info">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</span>
                 </div>
                 <div class="online_control--form">
-                    <input type="text">
-                        <button>
-                            <checkbox></checkbox>
-                        </button>
-                    <input type="text">
-                        <button>
-                            <checkbox></checkbox>
-                        </button>
+                    <form class="online_control--form--fullfil" action="#" id="main-form">
+                        <div class="online_control--form--fullfil--name">
+                            <label for="name-form"></label>Name <br></label>
+                            <input type="text" id="name-form" value="What is your name:" readonly="readonly">
+                        </div>
+                        <div class="online_control--form--fullfil--phone">
+                            <label for="phone-form">Phone <br></label>
+                            <input type="text" id="phone-form" value="Your phone number:" readonly="readonly">
+                        </div>
+                    </form>
+                    <button class="online_control--form--submit" type="submit" form="main-form">SUBMIT</button>
+                    <checkbox class="online_control--form--agree"></checkbox>
                 </div>
             </div>
             <div class="repair_types">
@@ -281,7 +286,6 @@
                     <a class="nav_box--call" href="tel: +7(928)768-32-39">+7(928)768-32-39</a>
                     <button class="nav_box--button"><span>request a call</span></button>
                 </div>
-        </footer>
-    </div>    
+        </footer>  
 </body>
 </html>
