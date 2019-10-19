@@ -10,18 +10,19 @@
     <link rel="stylesheet" href="./assets/fonts-desktop/demo.html">
     <title>Best-Repairs</title>
 </head>
-<body class="page_wrapper">
+<body class="full_wrapper">
+    <div class="page_wrapper">
         <header class="header">
             <div class="nav_box">
                 <div class="nav_box--logo"><h1>IC "Repair Design Project"</h1></div>
                 <nav class="nav_box--navbar">
                     <ul class="nav_box--navbar--list">
-                        <li class="nav_box--navbar--list--item" selected><a href="#">home</a></li>
-                        <li class="nav_box--navbar--list--item"><a href="#">projects</a></li>
-                        <li class="nav_box--navbar--list--item"><a href="#">measurement</a></li>
-                        <li class="nav_box--navbar--list--item"><a href="#">team</a></li>
-                        <li class="nav_box--navbar--list--item"><a href="#">reviews</a></li>
-                        <li class="nav_box--navbar--list--item"><a href="#">contacts</a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">projects</a></li>
+                        <li><a href="#">measurement</a></li>
+                        <li><a href="#">team</a></li>
+                        <li><a href="#">reviews</a></li>
+                        <li><a href="#">contacts</a></li>
                     </ul>
                 </nav>
                 <a class="nav_box--call" href="tel: +7(928)768-32-39">+7(928)768-32-39</a>
@@ -91,7 +92,8 @@
                     <img src="./assets/images/online-control.svg" alt="camera logo" class="online_control--logo--item">
                 </div>
                 <div class="online_control--video">
-                    <iframe width="817" height="434" src="https://www.youtube.com/embed/e98dzGwAzfQ?start=141" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <iframe width="817" height="434" src="https://www.youtube.com/embed/e98dzGwAzfQ?start=141" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <div class="online_control--text">
                     <img class="online_control--text--line" src="./assets/images/control-underline.png" alt="undeline line">
                     <span class="online_control--text--info">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</span>
@@ -108,7 +110,10 @@
                         </div>
                     </form>
                     <button class="online_control--form--submit" type="submit" form="main-form">SUBMIT</button>
-                    <checkbox class="online_control--form--agree"></checkbox>
+                    <div class="online_control--form--agree">
+                        <input type="checkbox" id="checkbox" >
+                        <label for="checkbox">I agree to the processing of personal data</label>
+                    </div>
                 </div>
             </div>
             <div class="repair_types">
@@ -131,7 +136,7 @@
                                 <li>Replacing doors</li>
                             </ul>
                         </div>
-                        <button><p>from 900 rub / m2</p></button>
+                        <button class="repair_types--samples--container--confirmation"><span>from 900 rub / m2</span></button>
                     </div>
                     <div class="repair_types--samples--container">
                         <img src="./assets/images/overhaul.png" alt="overhaul">
@@ -147,7 +152,7 @@
                                 <li>Replacing doors</li>
                             </ul>
                         </div>
-                        <button></button>
+                        <button class="repair_types--samples--container--confirmation"><span>from 1800 rub / m2</span></button>
                     </div>
                     <div class="repair_types--samples--container">
                         <img src="./assets/images/designer-repair.png" alt="designer-repair">
@@ -163,22 +168,36 @@
                                 <li>Replacing doors</li>
                             </ul>
                         </div>
-                        <button></button>
+                        <button class="repair_types--samples--container--confirmation"><span>from 4000 rub / m2 </span></button>
                     </div>
                 </div>
             </div>
-            <div class="order_cycle">
-                <div class="order_cycle--cycle">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+            <div class="cycle_wrapper">
+                <div class="order_cycle">
+                    <div class="order_cycle--cycle">
+                        <div class="order_cycle--cycle--round"></div>
+                        <div class="order_cycle--cycle--item1">
+                            <div class="cycle_number">01</div>
+                            <span class="cycle_text">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</span>
+                        </div>
+                        <div class="order_cycle--cycle--item2">
+                            <div class="cycle_number">02</div>
+                            <span class="cyrcle_text">Free metering</span>
+                        </div>
+                        <div class="order_cycle--cycle--item3">
+                            <div class="cycle_number">03</div>
+                            <span class="cycle_text">Free consultation</span>
+                        </div>
+                        <div class="order_cycle--cycle--item4">
+                            <div class="cycle_number">04</div>
+                            <span class="cycle_text">Get a cost estimate and the timing of your future repairs</span>
+                        </div>
+                    </div>
+                    <div class="order_cycle--form">
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
-                <div class="order_cycle--form">
-                    <div></div>
-                    <div></div>
-                </div>
-
             </div>
             <div class="fantasies">
                 <div class="fantasies--countries">
@@ -247,7 +266,7 @@
                         <div>
                             <span></span><span></span>
                         </div>
-                        <div><span></span></s></div>
+                        <div><span></span></div>
                     </div>
                     <div>
                         <img src="./assets/images/for-alex.svg" alt="">
@@ -320,5 +339,6 @@
                     <button class="nav_box--button"><span>request a call</span></button>
                 </div>
         </footer>  
+    </div>
 </body>
 </html>
