@@ -78,7 +78,6 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  text-decoration: none;
   color: #FFFFFF;
 }
 .nav_box--call {
@@ -512,6 +511,12 @@
   border: none;
   margin-top: 74px;
 }
+.online_control--form--fullfil label {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
 .online_control--form--fullfil input {
   outline: 0;
   border-width: 0 0 2px;
@@ -590,6 +595,7 @@
   height: 608px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 30px;
   justify-content: space-between;
 }
 .repair_types--samples--container {
@@ -658,13 +664,14 @@
   display: flex;
   width: 114.1%;
   height: 726px;
+  margin-left: -21.1%;
 }
 .cycle_wrapper .order_cycle--cycle {
   display: flex;
   position: relative;
   height: 100%;
   width: 67%;
-  margin-left: -21%;
+  margin-left: -3.5%;
 }
 .cycle_wrapper .order_cycle--cycle--round {
   display: block;
@@ -712,6 +719,113 @@
   margin-top: 520px;
   align-items: baseline;
 }
+.cycle_wrapper .order_cycle--form {
+  display: block;
+  height: 100%;
+  width: 30.8%;
+  margin-left: auto;
+  margin-right: 0;
+}
+.cycle_wrapper .order_cycle--form--request {
+  display: block;
+  height: 509px;
+  width: 100%;
+  background: #010101;
+  margin-top: 100px;
+}
+.cycle_wrapper .order_cycle--form--request--title {
+  display: block;
+  width: 53%;
+  height: 75px;
+  padding-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  font-family: FuturaDemiC;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+}
+.cycle_wrapper .order_cycle--form--request label {
+  display: block;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  height: 17px;
+  width: 8.3%;
+  margin-left: 9.7%;
+  margin-top: 56px;
+}
+.cycle_wrapper .order_cycle--form--request input {
+  display: block;
+  font-family: FuturaMediumC;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-left: 9.7%;
+  background: #010101;
+  outline: 0;
+  width: 80.6%;
+  height: 49px;
+  border-width: 0 0 2px;
+  border-color: rgba(54, 54, 54, 0.3);
+  float: left;
+}
+.cycle_wrapper .order_cycle--form--request--agree {
+  display: flex;
+  color: #FFFFFF;
+  width: 100%;
+  height: 49px;
+  justify-content: space-around;
+  align-items: center;
+}
+.cycle_wrapper .order_cycle--form--request--agree label {
+  display: block;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  height: 17px;
+  width: 89%;
+  margin-left: 1px;
+  margin-top: 0;
+}
+.cycle_wrapper .order_cycle--form--request--agree input {
+  display: block;
+  background: #010101;
+  outline: 0;
+  width: 10%;
+  height: 18px;
+  border-width: 0 0 2px;
+  border-color: rgba(54, 54, 54, 0.3);
+}
+.cycle_wrapper .order_cycle--form--request--submit {
+  display: block;
+  height: 51px;
+  width: 42%;
+  margin-top: 40px;
+  margin-left: 48%;
+  border: none;
+  background: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  font-family: FuturaDemiC, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.cycle_wrapper .order_cycle--form--pig {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 88%;
+  height: 110px;
+  align-items: flex-end;
+}
 
 .cycle_number {
   display: block;
@@ -738,9 +852,104 @@
 }
 
 .fantasies {
-  display: grid;
+  display: flex;
   width: 100%;
   height: 1170px;
+  background: url(./assets/images/fantasies-back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fantasies--countries {
+  display: block;
+  width: 28.55%;
+  margin-left: 6.88%;
+  height: 640px;
+  align-items: center;
+  margin-top: 290px;
+}
+.fantasies--countries--logo {
+  display: block;
+  width: 88%;
+  height: 66px;
+  text-align: inherit;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+.fantasies--countries--list {
+  display: block;
+  height: 618px;
+  text-align: justify;
+}
+.fantasies--countries--list ul {
+  height: 100%;
+  list-style: none;
+  float: left;
+  padding-left: 0;
+}
+.fantasies--countries--list li {
+  font-family: Proxima Nova;
+  font-size: 20px;
+  line-height: 34px;
+  color: #FFFFFF;
+  height: 24px;
+  margin-top: 26px;
+}
+.fantasies--countries--list li:first-child {
+  color: #E3B873;
+  height: 26px;
+  text-decoration: underline;
+}
+.fantasies--countries--list a {
+  text-decoration: none;
+}
+.fantasies--samples {
+  display: flex;
+  height: 100%;
+  width: 59.24%;
+  margin-right: 0;
+}
+.fantasies--samples--left {
+  display: block;
+  position: relative;
+  height: 945.86px;
+  width: 41.48%;
+  margin-bottom: 0;
+}
+.fantasies--samples--left--up {
+  overflow: hidden;
+  position: relative;
+  height: 556.86px;
+  width: 100%;
+}
+.fantasies--samples--left--down {
+  overflow: hidden;
+  position: relative;
+  height: 349.47px;
+  width: 100%;
+}
+.fantasies--samples--right {
+  display: block;
+  position: relative;
+  height: 937px;
+  width: 41.48%;
+  margin-top: 0;
+}
+.fantasies--samples--right--up {
+  overflow: hidden;
+  position: relative;
+  height: 275px;
+  width: 100%;
+}
+.fantasies--samples--right--down {
+  overflow: hidden;
+  position: relative;
+  height: 625.23px;
+  width: 100%;
 }
 
 .design_project {
