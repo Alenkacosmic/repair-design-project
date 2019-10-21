@@ -2,13 +2,13 @@
   display: block;
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 100vw;
 }
 
 .page_wrapper {
   display: block;
   position: relative;
-  width: 1440px;
+  max-width: 1440px;
   height: 10150px;
   margin: 0 auto;
   background: #FFFFFF;
@@ -563,7 +563,7 @@
 .repair_types--logo {
   display: block;
   height: 67px;
-  width: 14%;
+  width: 100%;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -585,7 +585,6 @@
 .repair_types--logo--item {
   display: block;
   position: relative;
-  margin-top: -10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -613,10 +612,8 @@
   margin-top: -127px;
   background: #FFFFFF;
 }
-.repair_types--samples--container--description ul {
-  margin: 0;
-}
-.repair_types--samples--container--description li:first-child {
+.repair_types--samples--container--description span {
+  display: block;
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
@@ -624,8 +621,12 @@
   line-height: 25px;
   text-transform: uppercase;
   color: #010101;
-  margin-bottom: 0;
-  list-style-type: none;
+  padding-top: 16px;
+  margin-bottom: 8px;
+  margin-left: 9%;
+}
+.repair_types--samples--container--description ul {
+  margin: 0;
 }
 .repair_types--samples--container--description li {
   font-family: FuturaBookC;
@@ -911,7 +912,8 @@
   display: flex;
   height: 100%;
   width: 59.24%;
-  margin-right: 0;
+  margin-right: auto;
+  margin-left: 9%;
 }
 .fantasies--samples--left {
   display: block;
@@ -925,19 +927,35 @@
   position: relative;
   height: 556.86px;
   width: 100%;
+  margin-top: 117px;
+}
+.fantasies--samples--left--up img {
+  position: absolute;
+  width: 830px;
+  height: 564px;
+  margin-left: -67%;
+  margin-top: -5px;
 }
 .fantasies--samples--left--down {
   overflow: hidden;
   position: relative;
   height: 349.47px;
   width: 100%;
+  margin-top: 39.53px;
+}
+.fantasies--samples--left--down img {
+  position: absolute;
+  width: 568px;
+  height: 347px;
+  margin-left: -33%;
 }
 .fantasies--samples--right {
   display: block;
   position: relative;
   height: 937px;
-  width: 41.48%;
-  margin-top: 0;
+  width: 43.48%;
+  margin-top: 36px;
+  margin-left: 4.4%;
 }
 .fantasies--samples--right--up {
   overflow: hidden;
@@ -945,23 +963,305 @@
   height: 275px;
   width: 100%;
 }
+.fantasies--samples--right--up img {
+  position: absolute;
+  width: 386px;
+  height: 275px;
+  margin-left: -8%;
+}
 .fantasies--samples--right--down {
   overflow: hidden;
   position: relative;
   height: 625.23px;
   width: 100%;
+  margin-top: 36.77px;
+}
+.fantasies--samples--right--down img {
+  position: absolute;
+  width: 951px;
+  height: 625px;
+  margin-left: -85%;
 }
 
 .design_project {
-  display: grid;
+  display: block;
   width: 100%;
   height: 1680px;
+  background: linear-gradient(#010101 50%, #010101 50%);
+  background-size: 100% 1185px;
+  background-repeat: no-repeat;
+  background-position: 0px 495px;
+}
+.design_project--logo {
+  display: block;
+  justify-content: center;
+  width: 100%;
+  height: 160px;
+}
+.design_project--logo--text {
+  display: block;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+}
+.design_project--logo--image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12.89px;
+}
+.design_project--logo--description {
+  display: block;
+  height: 57px;
+  width: 52.3%;
+  margin-top: 24.11px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
+}
+.design_project--types {
+  display: flex;
+  height: 710px;
+  width: 86.05%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
+  padding: 0;
+  justify-content: space-between;
+}
+.design_project--types span {
+  display: block;
+  padding-top: 25px;
+  margin-bottom: 13x;
+  margin-left: 34px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #363636;
+}
+.design_project--types li {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+.design_project--types--submit {
+  display: block;
+  position: relative;
+  width: 58.16%;
+  height: 54px;
+  margin-top: -28px;
+  margin-left: 7.91%;
+  margin-right: auto;
+  background: #E3B873;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.design_project--types--mini {
+  display: block;
+  height: 535px;
+  width: 31.64%;
+}
+.design_project--types--mini--image {
+  display: block;
+  width: 100%;
+  height: 421px;
+  margin: 0;
+}
+.design_project--types--mini--list {
+  position: relative;
+  display: block;
+  width: 84.18%;
+  height: 211px;
+  margin-top: -127px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFFF;
+}
+.design_project--types--standard {
+  display: block;
+  height: 608px;
+  width: 31.64%;
+}
+.design_project--types--standard--image {
+  display: block;
+  width: 100%;
+  height: 421px;
+  margin: 0;
+}
+.design_project--types--standard--list {
+  position: relative;
+  display: block;
+  width: 84.18%;
+  height: 286px;
+  margin-top: -127px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFFF;
+}
+.design_project--types--full {
+  display: block;
+  height: 710px;
+  width: 31.64%;
+}
+.design_project--types--full--image {
+  display: block;
+  width: 100%;
+  height: 421px;
+  margin: 0;
+}
+.design_project--types--full--list {
+  position: relative;
+  display: block;
+  width: 84.18%;
+  height: 414px;
+  margin-top: -127px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFFF;
+}
+.design_project--steps {
+  display: flex;
+  height: 686px;
+  width: 86.02%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.design_project--steps--describe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: inherit;
+  width: 42%;
+  height: 686px;
+  margin: 0;
+  padding: 0;
+}
+.design_project--steps--describe--head {
+  display: flex;
+  height: 100px;
+  width: 62.46%;
+  flex-wrap: wrap;
+}
+.design_project--steps--describe--head--one {
+  display: block;
+  width: 100%;
+  height: 16px;
+  margin-bottom: 18px;
+  font-family: FuturaDemiC;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.design_project--steps--describe--head--two {
+  display: block;
+  width: 48.65%;
+  height: 66px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+.design_project--steps--describe--head--three {
+  align-self: flex-end;
+  padding-bottom: 3%;
+}
+.design_project--steps--describe--telling {
+  display: flex;
+  flex-wrap: wrap;
+  height: 323px;
+  width: 64.81%;
+}
+.design_project--steps--describe--telling--number {
+  display: block;
+  width: 100%;
+  height: 21px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.design_project--steps--describe--telling--heading {
+  display: block;
+  width: 100%;
+  height: 42px;
+  margin-top: 25px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+.design_project--steps--describe--telling--text {
+  display: block;
+  width: 100%;
+  height: 222px;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.design_project--steps--describe--slider {
+  display: inline-block;
+  height: 13.28px;
+  width: 55.2%;
+  padding: 0;
+}
+.design_project--steps--describe--slider--dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 8px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.design_project--steps--describe--slider--turn {
+  cursor: pointer;
+  height: 15px;
+  width: 5%;
+  margin: 0 12px;
+}
+.design_project--steps--show {
+  display: block;
 }
 
 .team {
   display: block;
   width: 100%;
   height: 950px;
+  background: linear-gradient(#010101 50%, #010101 50%);
+  background-size: 100% 475px;
+  background-repeat: no-repeat;
 }
 
 .clients {
