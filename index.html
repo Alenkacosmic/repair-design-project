@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="./assets/fonts-desktop/demo.html">
+    <link rel="stylesheet" href="./assets/fonts-desktop/stylesheet.css">
     <title>Best-Repairs</title>
 </head>
 <body class="full_wrapper">
@@ -26,7 +26,7 @@
                     </ul>
                 </nav>
                 <a class="nav_box--call" href="tel: +7(928)768-32-39">+7(928)768-32-39</a>
-                <button class="nav_box--button "><span>request a call</span></button>
+                <button class="nav_box--request "><span>request a call</span></button>
             </div>
         </header>
         <main class="main_content">
@@ -64,7 +64,7 @@
                         <span class="completed_projects--description--text--explain">3.5 months </span><span class="completed_projects--description--text--explain">Upon request </span>
                         <div class="completed_projects--description--text--slider">
                             <span class="completed_projects--description--text--slider--turn"><img src="./assets/images/left-slide.svg" alt="slide me left"></span>
-                            <span class="completed_projects--description--text--slider--dot" onclick="currentSlide(1)"></span>
+                            <a class="completed_projects--description--text--slider--dot" onclick="currentSlide(1)"></a>
                             <span class="completed_projects--description--text--slider--dot" onclick="currentSlide(2)"></span>
                             <span class="completed_projects--description--text--slider--dot" onclick="currentSlide(3)"></span>
                             <span class="completed_projects--description--text--slider--turn"><img src="./assets/images/right-slide.svg" alt="slide me right"></span>
@@ -111,7 +111,7 @@
                     </form>
                     <button class="online_control--form--submit" type="submit" form="main-form">SUBMIT</button>
                     <div class="online_control--form--agree">
-                        <input type="checkbox" id="checkbox" >
+                        <input type="checkbox" id="checkbox" checked>
                         <label for="checkbox">I agree to the processing of personal data</label>
                     </div>
                 </div>
@@ -203,14 +203,14 @@
                             <label for="email-form">Email <br></label>
                             <input type="text" id="email-form" value="Your email" readonly="readonly">
                             <div class="order_cycle--form--request--agree">
-                                <input type="checkbox" id="checkbox" >
+                                <input type="checkbox" id="checkbox" checked>
                                 <label for="checkbox">I agree to the processing of personal data</label>
                             </div>
                             <button class="order_cycle--form--request--submit" type="submit" form="main-form">Call the measurer</button>
                         </form>
                         <div class="order_cycle--form--pig">
                             <img src="./assets/images/money pig.svg" alt="money-pig">
-                            <span>Help save 10 - 20% of the cost of materials</span>
+                            <span class="order_cycle--form--pig--slogan">Help save 10 - 20% of the cost of materials</span>
                         </div>
                     </div>
                 </div>
