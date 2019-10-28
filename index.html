@@ -102,16 +102,16 @@
                     <form class="online_control--form--fullfil" action="#" id="main-form">
                         <div class="online_control--form--fullfil--name">
                             <label for="name-form"></label>Name <br></label>
-                            <input type="text" id="name-form" value="What is your name:" readonly="readonly">
+                            <input type="text" id="name-form" value="What is your name:" required>
                         </div>
                         <div class="online_control--form--fullfil--phone">
                             <label for="phone-form">Phone <br></label>
-                            <input type="text" id="phone-form" value="Your phone number:" readonly="readonly">
+                            <input type="text" id="phone-form" value="Your phone number:" required>
                         </div>
                     </form>
                     <button class="online_control--form--submit" type="submit" form="main-form">SUBMIT</button>
                     <div class="online_control--form--agree">
-                        <input type="checkbox" id="checkbox" checked>
+                        <input type="checkbox" id="checkbox" checked required>
                         <label for="checkbox">I agree to the processing of personal data</label>
                     </div>
                 </div>
@@ -329,46 +329,77 @@
                         </div>
                     </div>
                     <div class="design_project--steps--show">
-                            
+                        <div class="design_project--steps--show--explain">
+                            <div class="design_project--steps--show--explain--stepby">
+                                <span>01</span>
+                                <span>Departure to room measurements</span>
+                            </div>
+                            <div class="design_project--steps--show--explain--stepby">
+                                <span>02</span>
+                                <span>Compilation estimates</span>
+                            </div>
+                            <div class="design_project--steps--show--explain--stepby">
+                                <span>03</span>
+                                <span>Development project design</span>
+                            </div>
+                            <div class="design_project--steps--show--explain--stepby">
+                                <span>04</span>
+                                <span>Purchasing Supplies</span>
+                            </div>
+                            <div class="design_project--steps--show--explain--stepby">
+                                <span>05</span>
+                                <span>Repair finishing work</span>
+                            </div>
+                            <div class="design_project--steps--show--explain--stepby">
+                                <span>06</span>
+                                <span>Приемка-сдача работ</span>
+                            </div>
+                        </div>
+                        <div class="design_project--steps--show--measure">
+                            <img src="./assets/images/measuring_man.png" alt="measuring man">
+                        </div>   
                     </div>
                 </div>
             </div>
             <div class="team">
-                <div>
-                    <span></span>
-                    <img src="" alt="">
-                    <span></span>
+                <div class="team--logo">
+                    <span class="team--logo--name">our team</span>
+                    <img class="team--logo--image" src="./assets/images/team-logo.svg" alt="team logo">
+                    <span class="team--logo--slogan">Our team has helped to become happier for more than 500 families and we are not going to stop </span>
                 </div>
                 <div class="team--look_at">
-                    <div>
-                        <img src="./assets/images/for-mitry.svg" alt="">
-                        <img src="./assets/images/dmitry.png" alt="">
-                        <div>
-                            <span></span><span></span>
+                    <div class="team_containers">
+                        <img class="team_containers--icon" src="./assets/images/for-mitry.svg" alt="">
+                        <img class="team_containers--person" src="./assets/images/dmitry.png" alt="">
+                        <div class="team_containers--description">
+                            <span>Dmitry tulyakov</span>
+                            <span>Project manager</span>
+                            <span>Work experience 8 years</span>
                         </div>
-                        <div><span></span></div>
                     </div>
-                    <div>
-                        <img src="./assets/images/for-larisa.svg" alt="">
-                        <img src="./assets/images/larisa.png" alt="">
-                        <div>
-                            <span></span><span></span>
+                    <div class="team_containers">
+                        <img class="team_containers--icon" src="./assets/images/for-larisa.svg" alt="">
+                        <img class="team_containers--person" src="./assets/images/larisa.png" alt="">
+                        <div class="team_containers--description">
+                            <span>Larisa Kotlyarova</span>
+                            <span>Designer</span>
+                            <span>Work experience 6 years</span>
                         </div>
-                        <div><span></span></div>
                     </div>
-                    <div>
-                        <img src="./assets/images/for-alex.svg" alt="">
-                        <img src="./assets/images/alexey.png" alt="">
-                        <div>
-                            <span></span><span></span>
+                    <div class="team_containers">
+                        <img class="team_containers--icon" src="./assets/images/for-alex.svg" alt="">
+                        <img class="team_containers--person" src="./assets/images/alexey.png" alt="">
+                        <div class="team_containers--description">
+                            <span>Alexey Efimov</span>
+                            <span>Foreman</span>
+                            <span>Work experience 12 years</span>
                         </div>
-                        <div><span></span></div>
                     </div>
                 </div>
                 <div class="team--a_word">
-                    <img src="" alt="">
-                    <span>Each employee of our company is a qualified full-time specialist with work experience of 6 years.</span>
-                    <span>We do not have laborers and guest workers, each employee carries out work corresponding to his specialty.</span>
+                    <img class="team--a_word--image" src="./assets/images/underline team.svg" alt="underline">
+                    <span class="team--a_word--motivate">Each employee of our company is a qualified full-time specialist with work experience of 6 years.</span>
+                    <span class="team--a_word--motivate">We do not have laborers and guest workers, each employee carries out work corresponding to his specialty.</span>
                 </div>
             </div>
             <div class="clients">
