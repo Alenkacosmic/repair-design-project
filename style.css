@@ -1517,6 +1517,59 @@
   width: 100%;
   height: 750px;
 }
+.clients--logo {
+  display: block;
+  width: 100%;
+  height: 186.53px;
+}
+.clients--logo--name {
+  display: block;
+  height: 26px;
+  width: 17.85%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+}
+.clients--logo--image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13.22px;
+  margin-bottom: 24.16px;
+}
+.clients--logo--slogan {
+  display: block;
+  height: 57px;
+  width: 27%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
+}
+.clients--real {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 85.84%;
+  height: 455.03px;
+  justify-content: space-between;
+}
+.clients--real .clients_containers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30.42%;
+  height: 455.03px;
+  background: #FFFFFF;
+}
 
 .question_location {
   position: relative;
