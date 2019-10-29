@@ -1562,13 +1562,80 @@
   width: 85.84%;
   height: 455.03px;
   justify-content: space-between;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .clients--real .clients_containers {
   display: flex;
   flex-wrap: wrap;
   width: 30.42%;
-  height: 455.03px;
+  height: 428px;
   background: #FFFFFF;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+.clients--real .clients_containers--face {
+  display: block;
+  height: 76px;
+  width: 76px;
+  object-fit: none;
+  margin-top: 24px;
+  margin-left: 5.32%;
+}
+.clients--real .clients_containers--name {
+  display: block;
+  height: 42px;
+  width: 47.34%;
+  margin-left: 6.12%;
+  margin-right: auto;
+  margin-top: 41px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #181818;
+}
+.clients--real .clients_containers--text {
+  display: block;
+  width: 86.2%;
+  height: 221px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 180%;
+  text-transform: lowercase;
+  color: #959595;
+}
+.clients--real .clients_containers--buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  height: 54.03px;
+  width: 78.13%;
+  margin-left: 0;
+  background: #E3B873;
+  box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+  margin-bottom: -55px;
+  margin-top: 25px;
+}
+.clients--real .clients_containers--buttons img {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  object-fit: none;
+}
+.clients--real .clients_containers--buttons span {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .question_location {
