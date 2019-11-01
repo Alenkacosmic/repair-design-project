@@ -342,7 +342,7 @@
                 color: #FFFFFF;
             }
             &--cathegory {
-                display: inline;
+                display: inline-block;
                 height: 25px;
                 width: 43%;
                 margin-top: 45px;
@@ -1734,6 +1734,6 @@
     align-items: center;
 
     h2 {
-        
+
     }
 }
