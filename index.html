@@ -11,11 +11,10 @@
     <title>Best-Repairs</title>
 </head>
 <body class="full_wrapper">
-    <div class="page_wrapper">
-        <header class="header">
-            <div class="nav_box">
-                <div class="nav_box--logo"><h1>IC "Repair Design Project"</h1></div>
-                <nav class="nav_box--navbar">
+    <header class="header">
+        <div class="nav_box">
+            <div class="nav_box--logo"><h1>IC "Repair Design Project"</h1></div>
+            <nav class="nav_box--navbar">
                     <ul class="nav_box--navbar--list">
                         <li><a href="#">home</a></li>
                         <li><a href="#">projects</a></li>
@@ -24,12 +23,12 @@
                         <li><a href="#">reviews</a></li>
                         <li><a href="#">contacts</a></li>
                     </ul>
-                </nav>
-                <a class="nav_box--call" href="tel: +7(928)768-32-39">+7(928)768-32-39</a>
-                <button class="nav_box--request "><span>request a call</span></button>
-            </div>
-        </header>
-        <main class="main_content">
+            </nav>
+            <a class="nav_box--call" href="tel: +7(928)768-32-39">+7(928)768-32-39</a>
+            <button class="nav_box--request "><span>request a call</span></button>
+        </div>
+    </header>
+    <main class="main_content">
             <section class="intro_section">
                 <div class="intro_section--instagram">
                     <div class="intro_section--instagram--cold"><a class="intro_section--instagram--cold--text" href="https://www.instagram.com/" target="_blank">instagram</a></div>
@@ -101,7 +100,7 @@
                 <div class="online_control--form">
                     <form class="online_control--form--fullfil" action="#" id="main-form">
                         <div class="online_control--form--fullfil--name">
-                            <label for="name-form"></label>Name <br></label>
+                            <label for="name-form">Name <br></label>
                             <input type="text" id="name-form" value="What is your name:" required>
                         </div>
                         <div class="online_control--form--fullfil--phone">
@@ -439,28 +438,54 @@
                 </div>
             </section>
             <section class="question_location">
-                <div></div>
-                <div></div>
-                <div></div>
-            </section>
-        </main>
-        <footer class="footer">
-                <div class="nav_box">
-                    <div class="nav_box--logo"><h2>IC "Repair Design Project"</h2></div>
-                    <nav class="nav_box--navbar">
-                        <ul class="nav_box--navbar--list">
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">projects</a></li>
-                            <li><a href="#">measurement</a></li>
-                            <li><a href="#">team</a></li>
-                            <li><a href="#">reviews</a></li>
-                            <li><a href="#">contacts</a></li>
-                        </ul>
-                    </nav>
-                    <a class="nav_box--call" href="tel: +7(928)768-32-39">+7(928)768-32-39</a>
-                    <button class="nav_box--request"><span>request a call</span></button>
+                <div class="question_location--question">
+                    <span class="question_location--question--title">have any questions?</span>
+                    <form class="question_location--question--form" action="#" id="question_form">
+                    <div class="question_location--question--form--item">
+                        <label for="name-form">Name <br></label>
+                        <input type="text" id="name-form" value="What is your name:" readonly="readonly">
+                    </div>
+                    <div class="question_location--question--form--item">
+                        <label for="phone-form">Phone <br></label>
+                        <input type="text" id="phone-form" value="Your phone number:" readonly="readonly">
+                    </div>
+                    <div class="question_location--question--form--asking">
+                        <label for="email-form">Question <br></label>
+                        <input type="text" id="email-form" value="I want to know:" readonly="readonly">
+                    </div>
+                    <div class="question_location--question--form--agree">
+                            <input type="checkbox" id="checkbox" checked>
+                            <label for="checkbox">I agree to the processing of personal data</label>
+                    </div>
+                        <button class="question_location--question--form--submit" type="submit" form="main-form">submit</button>
+                    </form>
                 </div>
-        </footer>  
-    </div>
+                <div class="question_location--address">
+                    <span class="question_location--address--law">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel <a href="tel: +7(928)768-32-39">+7 (928) 768 32 29</a></span>
+                    <div class="question_location--address--link">
+                        <img src="./assets/images/mail-icon.svg" alt="mail">
+                        <img src="./assets/images/insta-icon.svg" alt="insta">
+                    </div>
+                </div>
+                <iframe class="question_location--address--map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.560231199183!2d39.72097421601465!3d47.24474737916243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sen!2sby!4v1573159529424!5m2!1sen!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </section>
+    </main>
+    <footer class="footer">
+            <div class="nav_box">
+                <div class="nav_box--logo"><h2>IC "Repair Design Project"</h2></div>
+                <nav class="nav_box--navbar">
+                    <ul class="nav_box--navbar--list">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">projects</a></li>
+                        <li><a href="#">measurement</a></li>
+                        <li><a href="#">team</a></li>
+                        <li><a href="#">reviews</a></li>
+                        <li><a href="#">contacts</a></li>
+                    </ul>
+                </nav>
+                <a class="nav_box--call" href="tel: +7(928)768-32-39">+7(928)768-32-39</a>
+                <button class="nav_box--request"><span>request a call</span></button>
+            </div>
+    </footer>  
 </body>
 </html>
