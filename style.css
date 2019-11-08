@@ -7,6 +7,12 @@
   background: #FFFFFF;
   background-size: cover;
 }
+@media screen and (max-width: 375px) {
+  .full_wrapper {
+    max-width: 375px;
+    height: 8796px;
+  }
+}
 
 .header {
   position: relative;
@@ -20,6 +26,12 @@
   background: #010101;
   align-items: center;
   justify-content: space-around;
+}
+@media screen and (max-width: 375px) {
+  .header {
+    height: 57px;
+    flex-wrap: nowrap;
+  }
 }
 
 .nav_box {
@@ -38,10 +50,22 @@
 }
 .nav_box--logo h1 {
   font-family: FuturaDemiC, sans-serif;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   text-transform: uppercase;
   color: #E3B873;
+}
+@media screen and (max-width: 375px) {
+  .nav_box--logo h1 {
+    line-height: 0.875rem;
+    font-size: 0.625rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav_box--logo {
+    width: 46.93%;
+    height: 100%;
+  }
 }
 .nav_box--navbar {
   display: flex;
@@ -66,11 +90,16 @@
 .nav_box--navbar--list li > a {
   display: inline;
   font-family: FuturaBookC, sans-serif;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
+}
+@media screen and (max-width: 375px) {
+  .nav_box--navbar {
+    display: none;
+  }
 }
 .nav_box--call {
   display: block;
@@ -79,11 +108,16 @@
   height: 100%;
   padding-top: 1%;
   font-family: FuturaDemiC, sans-serif;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   text-align: right;
   text-decoration-line: underline;
   color: #E3B873;
+}
+@media screen and (max-width: 375px) {
+  .nav_box--call {
+    width: 28.53%;
+  }
 }
 .nav_box--request {
   display: block;
@@ -95,12 +129,17 @@
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
   font-family: FuturaDemiC, sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 15px;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (max-width: 375px) {
+  .nav_box--request {
+    display: none;
+  }
 }
 .nav_box--request:hover {
   background: #e3ce73;
@@ -140,8 +179,8 @@
 .intro_section--instagram--cold--text {
   position: relative;
   font-family: FuturaDemiC, sans-serif;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   text-align: center;
   color: #E3B873;
   text-decoration: none;
@@ -177,7 +216,7 @@
   font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 53px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -191,7 +230,7 @@
   height: 41.78%;
   margin: 0;
   font-family: FuturaBookC, sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 30px;
   color: #FFFFFF;
 }
@@ -216,7 +255,7 @@
   padding: 0;
   margin: 0;
   font-family: FuturaDemiC, sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 15px;
   text-align: center;
   justify-content: center;
@@ -263,7 +302,7 @@
   font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 19px;
   margin-right: 5%;
   text-transform: uppercase;
@@ -345,7 +384,7 @@
   margin-right: 15%;
   font-family: FuturaBookC;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: #FFFFFF;
 }
 .completed_projects--description--text--slider {
@@ -399,7 +438,7 @@
   font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 19px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
@@ -470,7 +509,7 @@
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
@@ -511,7 +550,7 @@
   height: 140px;
   width: 47.3%;
   font-family: FuturaBookC;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 34px;
   text-align: center;
   color: #363636;
@@ -538,7 +577,7 @@
 .online_control--form--fullfil label {
   font-family: FuturaBookC;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: rgba(54, 54, 54, 0.5);
   transform: rotate(-0.07deg);
 }
@@ -605,7 +644,7 @@
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
@@ -775,7 +814,7 @@
   margin-right: auto;
   color: #FFFFFF;
   font-family: FuturaDemiC;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 25px;
   text-align: center;
 }
@@ -783,7 +822,7 @@
   display: block;
   font-family: FuturaBookC;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: rgba(255, 255, 255, 0.5);
   height: 17px;
   width: 8.3%;
@@ -817,7 +856,7 @@
   display: block;
   font-family: FuturaBookC;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: rgba(255, 255, 255, 0.5);
   height: 17px;
   width: 89%;
@@ -869,7 +908,7 @@
   height: 47px;
   width: 56%;
   margin-top: 26px;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 25px;
   color: #E3B873;
   text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
@@ -941,7 +980,7 @@
 }
 .fantasies--countries--list li {
   font-family: Proxima Nova;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 34px;
   color: #FFFFFF;
   height: 24px;
@@ -1051,7 +1090,7 @@
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
@@ -1071,7 +1110,7 @@
   margin-left: auto;
   margin-right: auto;
   font-family: FuturaBookC;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 27px;
   text-align: center;
   color: #363636;
@@ -1375,7 +1414,7 @@
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
@@ -1393,7 +1432,7 @@
   margin-left: auto;
   margin-right: auto;
   font-family: FuturaBookC;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
@@ -1473,7 +1512,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 1.25rem;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -1495,7 +1534,7 @@
   margin-right: auto;
   margin-left: auto;
   font-family: FuturaBookC;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 34px;
   text-align: center;
   color: #363636;
@@ -1521,7 +1560,7 @@
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
@@ -1541,7 +1580,7 @@
   margin-left: auto;
   margin-right: auto;
   font-family: FuturaBookC;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 27px;
   text-align: center;
   color: #363636;
@@ -1659,7 +1698,7 @@
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
@@ -1681,7 +1720,7 @@
 .question_location--question--form--item label {
   font-family: FuturaBookC;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: rgba(255, 255, 255, 0.5);
   transform: rotate(-0.07deg);
 }
@@ -1705,7 +1744,7 @@
 .question_location--question--form--asking label {
   font-family: FuturaBookC;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: rgba(255, 255, 255, 0.5);
   transform: rotate(-0.07deg);
 }
@@ -1736,7 +1775,7 @@
   display: block;
   font-family: FuturaBookC;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: rgba(255, 255, 255, 0.5);
   height: 17px;
   width: 89%;
@@ -1763,7 +1802,7 @@
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
   font-family: FuturaDemiC;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
@@ -1783,7 +1822,7 @@
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 28px;
   text-transform: uppercase;
   color: #E3B873;
@@ -1824,8 +1863,8 @@
 }
 .footer h2 {
   font-family: FuturaDemiC;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   text-transform: uppercase;
   color: #E3B873;
 }
