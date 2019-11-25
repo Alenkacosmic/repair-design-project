@@ -1,3 +1,72 @@
+@mixin demic-font-one {
+    font-family: FuturaDemiC, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@mixin demic-font-two {
+    font-family: FuturaDemiC, sans-serif;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+@mixin yeseva-font-one {
+    font-family: Yeseva One, serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+@mixin yeseva-font-two {
+    font-family: Yeseva One, serif;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+@mixin book-font-one {
+    font-family: FuturaBookC, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+@mixin book-font-two {
+    font-family: FuturaBookC, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@mixin book-font-three {
+    font-family: FuturaBookC, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+@mixin book-font-four {
+    font-family: FuturaBookC, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+@mixin fav-side-margin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin font-style-weight {
+    font-style: normal;
+    font-weight: normal;
+}
+
+@mixin font-style-weight-up {
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+@mixin center-text {
+    text-align: center;
+    justify-content: center;
+}
+
 .full_wrapper {
     display: block;    
     position: relative;
@@ -7,7 +76,23 @@
     background: #FFFFFF;
     background-size: cover;
 
-    @media screen and (max-width: 375px) {
+    @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+    }
+
+    @media only screen and (min-width : 690px) and (max-width : 800px) {
+
+    }
+
+    @media only screen and (min-width : 595px) and (max-width : 690px) {
+
+    }
+
+    @media only screen and (min-width : 480px) and (max-width : 595px) {
+
+    }
+
+    @media screen and (min-width : 320px) and (max-width: 375px) {
         max-width: 375px;
         height: 8796px;
     }
@@ -26,10 +111,26 @@
     align-items: center;
     justify-content: space-around;
 
-    @media screen and (max-width: 375px) {
+    @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+    }
+
+    @media only screen and (min-width : 690px) and (max-width : 800px) {
+
+    }
+
+    @media only screen and (min-width : 595px) and (max-width : 690px) {
+
+    }
+
+    @media only screen and (min-width : 480px) and (max-width : 595px) {
+
+    }
+
+    @media screen and (min-width : 320px) and (max-width: 375px) {
         height: 57px;
         flex-wrap: nowrap;
-    }
+    } 
 }
 
 .nav_box {
@@ -47,24 +148,52 @@
         margin-right: 5%;
         
         h1 {
-            font-family: FuturaDemiC, sans-serif;
-            font-size: 0.875rem;
-            line-height: 1rem;
+            @include demic-font-one;
             text-transform: uppercase;
             color: #E3B873;
 
-            @media screen and (max-width: 375px) {
-                line-height: 0.875rem;
-                font-size: 0.625rem;
+            @media only screen and (min-width : 800px) and (max-width : 1024px) {
 
+            }
+        
+            @media only screen and (min-width : 690px) and (max-width : 800px) {
+        
+            }
+        
+            @media only screen and (min-width : 595px) and (max-width : 690px) {
+        
+            }
+        
+            @media only screen and (min-width : 480px) and (max-width : 595px) {
+        
+            }
+        
+            @media screen and (min-width : 320px) and (max-width: 375px) {             
+                line-height: 14px;
+                font-size: 11px;
             }
         }
 
-        @media screen and (max-width: 375px) {
+        @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+        }
+    
+        @media only screen and (min-width : 690px) and (max-width : 800px) {
+    
+        }
+    
+        @media only screen and (min-width : 595px) and (max-width : 690px) {
+    
+        }
+    
+        @media only screen and (min-width : 480px) and (max-width : 595px) {
+    
+        }
+    
+        @media screen and (min-width : 320px) and (max-width: 375px) {
             width: 46.93%;
             height: 100%;
-        }
- 
+        }            
     }
     
     &--navbar {
@@ -81,8 +210,7 @@
             width: 100%;
             margin-top: 5%;
             height: 100%;
-            text-align: center;
-            justify-content: space-between;
+            @include center-text;
 
             li:first-child > a {
                 color: #E3B873;
@@ -91,38 +219,76 @@
             li > a {
                 display: inline;
                 font-family: FuturaBookC, sans-serif;
-                font-size: 0.875rem;
-                line-height: 1rem;
+                font-size: 14px;
+                line-height: 16px;
                 text-transform: uppercase;
                 text-decoration: none;
                 color: #FFFFFF;
             }
         }
 
-        @media screen and (max-width: 375px) {
-            display: none;
+        @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
         }
+    
+        @media only screen and (min-width : 690px) and (max-width : 800px) {
+    
+        }
+    
+        @media only screen and (min-width : 595px) and (max-width : 690px) {
+    
+        }
+    
+        @media only screen and (min-width : 480px) and (max-width : 595px) {
+    
+        }
+    
+        @media screen and (min-width : 320px) and (max-width: 375px) {
+            display: none;
+        } 
     }
     
     &--call {
+        @include demic-font-one;
         display: block;
         position: relative;
         width: 10.03%;
         height: 100%;
         padding-top: 1%;
-        font-family: FuturaDemiC, sans-serif;
-        font-size: 0.875rem;
-        line-height: 1rem;
         text-align: right;
         text-decoration-line: underline;
         color: #E3B873;
 
-        @media screen and (max-width: 375px) {
-            width: 28.53%;
+        @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
         }
+    
+        @media only screen and (min-width : 690px) and (max-width : 800px) {
+    
+        }
+    
+        @media only screen and (min-width : 595px) and (max-width : 690px) {
+    
+        }
+    
+        @media only screen and (min-width : 480px) and (max-width : 595px) {
+    
+        }
+    
+        @media screen and (min-width : 320px) and (max-width: 375px) {
+            width: 35%;
+            padding-top: 3%;
+            text-decoration: none;
+            font-family: FuturaDemiC, sans-serif;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: right;
+            color: #FFFFFF;
+        } 
     }
 
     &--request {
+        @include demic-font-two;
         display: block;
         height: 37px;
         width: 12.81%;
@@ -131,22 +297,55 @@
         background: #E3B873;
         box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
         border-radius: 2px;
-        font-family: FuturaDemiC, sans-serif;
-        font-size: 0.8125rem;
-        line-height: 15px;
         text-decoration: none;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
 
-        @media screen and (max-width: 375px) {
-            display: none;
+        @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
         }
+    
+        @media only screen and (min-width : 690px) and (max-width : 800px) {
+    
+        }
+    
+        @media only screen and (min-width : 595px) and (max-width : 690px) {
+    
+        }
+    
+        @media only screen and (min-width : 480px) and (max-width : 595px) {
+    
+        }
+    
+        @media screen and (min-width : 320px) and (max-width: 375px) {
+            display: none;
+        } 
     }
     
     &--request:hover {
         background: rgb(227, 206, 115);
     }
+
+    @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+    }
+
+    @media only screen and (min-width : 690px) and (max-width : 800px) {
+
+    }
+
+    @media only screen and (min-width : 595px) and (max-width : 690px) {
+
+    }
+
+    @media only screen and (min-width : 480px) and (max-width : 595px) {
+
+    }
+
+    @media screen and (min-width : 320px) and (max-width: 375px) {
+        
+    }    
 }
 
 .main_content {
@@ -157,6 +356,26 @@
     height: 9935px;
     margin: 0;
     background: #FFFFFF;
+
+    @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+    }
+
+    @media only screen and (min-width : 690px) and (max-width : 800px) {
+
+    }
+
+    @media only screen and (min-width : 595px) and (max-width : 690px) {
+
+    }
+
+    @media only screen and (min-width : 480px) and (max-width : 595px) {
+
+    }
+
+    @media screen and (min-width : 320px) and (max-width: 375px) {
+        height: 8739px;
+    }
 }
 
 .intro_section {
@@ -181,10 +400,8 @@
             left: -5%;
 
             &--text {
+                @include demic-font-one;
                 position: relative;
-                font-family: FuturaDemiC, sans-serif;
-                font-size: 0.875rem;
-                line-height: 1rem;
                 text-align: center;
                 color: #E3B873;
                 text-decoration: none;
@@ -200,6 +417,26 @@
             top: 325px;
             left: 43%;
         }
+
+        @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+        }
+    
+        @media only screen and (min-width : 690px) and (max-width : 800px) {
+    
+        }
+    
+        @media only screen and (min-width : 595px) and (max-width : 690px) {
+            display: none;
+        }
+    
+        @media only screen and (min-width : 480px) and (max-width : 595px) {
+            display: none;
+        }
+    
+        @media screen and (min-width : 320px) and (max-width: 375px) {
+            display: none;
+        }
     }
     
     &--introduction {
@@ -209,6 +446,29 @@
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/FontPagePic.png);
         background-size: cover;
 
+        @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+        }
+    
+        @media only screen and (min-width : 690px) and (max-width : 800px) {
+    
+        }
+    
+        @media only screen and (min-width : 595px) and (max-width : 690px) {
+    
+        }
+    
+        @media only screen and (min-width : 480px) and (max-width : 595px) {
+    
+        }
+    
+        @media screen and (min-width : 320px) and (max-width: 375px) {
+            width: 100%;
+            overflow: hidden;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/FontPagePic.png);
+            background-position: 44% 0;;
+        }
+
         &--text {
             display: block;
             height: 30.13%;
@@ -216,21 +476,71 @@
             margin-left: 4.42%;
             margin-top: 17.45%;
 
+            @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+            }
+        
+            @media only screen and (min-width : 690px) and (max-width : 800px) {
+        
+            }
+        
+            @media only screen and (min-width : 595px) and (max-width : 690px) {
+        
+            }
+        
+            @media only screen and (min-width : 480px) and (max-width : 595px) {
+        
+            }
+        
+            @media screen and (min-width : 320px) and (max-width: 375px) {
+                @include fav-side-margin;
+                width: 90.4%;
+                height: 170px;
+                margin-top: 85px;
+            }
+
             &--one {
                 display: inline-block;
                 margin: 0;
                 width: 85%;
                 height: 49.3%;
                 font-family: Yeseva One, serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 2.5rem;
+                @include font-style-weight;
+                font-size: 40px;
                 line-height: 53px;
                 text-transform: uppercase;
                 color: #FFFFFF;
 
                 span {
                     color: #E3B873;;
+                }
+
+                @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+                }
+            
+                @media only screen and (min-width : 690px) and (max-width : 800px) {
+            
+                }
+            
+                @media only screen and (min-width : 595px) and (max-width : 690px) {
+            
+                }
+            
+                @media only screen and (min-width : 480px) and (max-width : 595px) {
+            
+                }
+            
+                @media screen and (min-width : 320px) and (max-width: 375px) {
+                    width: 100%;
+                    height: 60px;
+                    font-family: Yeseva One, serif;
+                    @include font-style-weight-up;
+                    font-size: 23px;
+                    line-height: 31px;
+                    color: #FFFFFF;
+                    margin-top: 0;
+                    @include fav-side-margin;
                 }
             }
 
@@ -240,9 +550,34 @@
                 height: 41.78%;
                 margin: 0;
                 font-family: FuturaBookC, sans-serif;
-                font-size: 1.375rem;
+                font-size: 22px;
                 line-height: 30px;
                 color: #FFFFFF;
+
+                @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+                }
+            
+                @media only screen and (min-width : 690px) and (max-width : 800px) {
+            
+                }
+            
+                @media only screen and (min-width : 595px) and (max-width : 690px) {
+            
+                }
+            
+                @media only screen and (min-width : 480px) and (max-width : 595px) {
+            
+                }
+            
+                @media screen and (min-width : 320px) and (max-width: 375px) {
+                    @include font-style-weight;
+                    @include fav-side-margin;
+                    @include book-font-four;
+                    width: 98%;
+                    height: 104px;
+                    margin-top: 16px;
+                }
             }
         }
         
@@ -256,6 +591,8 @@
             justify-content: space-between;
 
             &--calculate {
+                @include demic-font-two;
+                @include center-text;
                 position: relative;
                 display: block;
                 background: #E3B873;
@@ -266,13 +603,34 @@
                 border: none;
                 padding: 0;
                 margin: 0;
-                font-family: FuturaDemiC, sans-serif;
-                font-size: 0.8125rem;
-                line-height: 15px;
-                text-align: center;
-                justify-content: center;
                 color: #FFFFFF;
                 text-transform: uppercase;
+
+                @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+                }
+            
+                @media only screen and (min-width : 690px) and (max-width : 800px) {
+            
+                }
+            
+                @media only screen and (min-width : 595px) and (max-width : 690px) {
+            
+                }
+            
+                @media only screen and (min-width : 480px) and (max-width : 595px) {
+            
+                }
+            
+                @media screen and (min-width : 320px) and (max-width: 375px) {
+                    width: 90.3%;
+                    height: 51px;
+                    font-family: FuturaDemiC;
+                    font-size: 13px;
+                    line-height: 15px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
             }
             
             &--calculate:hover {
@@ -280,6 +638,8 @@
             }
            
             &--submit {
+                @include demic-font-two;
+                @include center-text;
                 position: relative;
                 display: block;
                 border: 1px solid #FFFFFF;
@@ -290,17 +650,64 @@
                 background-color: transparent;
                 padding: 0;
                 margin: 0;
-                font-family: FuturaDemiC, sans-serif;
-                font-size: 13px;
-                line-height: 15px;
-                text-align: center;
-                justify-content: center;
                 color: #FFFFFF;
                 text-transform: uppercase;
+
+                @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+                }
+            
+                @media only screen and (min-width : 690px) and (max-width : 800px) {
+            
+                }
+            
+                @media only screen and (min-width : 595px) and (max-width : 690px) {
+            
+                }
+            
+                @media only screen and (min-width : 480px) and (max-width : 595px) {
+            
+                }
+            
+                @media screen and (min-width : 320px) and (max-width: 375px) {
+                    width: 90.3%;
+                    height: 51px;
+                    font-family: FuturaDemiC;
+                    font-size: 13px;
+                    line-height: 15px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
             }
            
             &--submit:hover {
                 background: #ffffff94;
+            }
+
+            @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+            }
+        
+            @media only screen and (min-width : 690px) and (max-width : 800px) {
+        
+            }
+        
+            @media only screen and (min-width : 595px) and (max-width : 690px) {
+        
+            }
+        
+            @media only screen and (min-width : 480px) and (max-width : 595px) {
+        
+            }
+        
+            @media screen and (min-width : 320px) and (max-width: 375px) {
+                @include fav-side-margin;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 130px;
+                width: 90.4%;
+                margin-top: 32px;
             }
         }
     }
@@ -318,12 +725,10 @@
 
         &--scroll_text {
             font-family: Yeseva One, serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 0.875rem;
+            @include font-style-weight-up;
+            font-size: 14px;
             line-height: 19px;
             margin-right: 5%;
-            text-transform: uppercase;
             color: #FFFFFF;
             cursor: pointer;
         }
@@ -332,6 +737,45 @@
             color: #E3B873;
         }
 
+        @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+        }
+    
+        @media only screen and (min-width : 690px) and (max-width : 800px) {
+            display: none;
+        }
+    
+        @media only screen and (min-width : 595px) and (max-width : 690px) {
+            display: none;
+        }
+    
+        @media only screen and (min-width : 480px) and (max-width : 595px) {
+            display: none;
+        }
+    
+        @media screen and (min-width : 320px) and (max-width: 375px) {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+    }
+
+    @media only screen and (min-width : 690px) and (max-width : 800px) {
+
+    }
+
+    @media only screen and (min-width : 595px) and (max-width : 690px) {
+
+    }
+
+    @media only screen and (min-width : 480px) and (max-width : 595px) {
+
+    }
+
+    @media screen and (min-width : 320px) and (max-width: 375px) {
+        height: 476px;
     }
 }
 
@@ -342,6 +786,30 @@
     background: #010101;
     background-size: cover;
 
+    @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+    }
+
+    @media only screen and (min-width : 690px) and (max-width : 800px) {
+
+    }
+
+    @media only screen and (min-width : 595px) and (max-width : 690px) {
+
+    }
+
+    @media only screen and (min-width : 480px) and (max-width : 595px) {
+
+    }
+
+    @media screen and (min-width : 320px) and (max-width: 375px) {
+        height: 727px;
+        margin-top: 0;
+        flex-direction: column;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
     &--description {
         display: flex;
         flex-direction: column;
@@ -349,24 +817,119 @@
         height: 482px;
         margin-top: 120px;
 
+        @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+        }
+    
+        @media only screen and (min-width : 690px) and (max-width : 800px) {
+    
+        }
+    
+        @media only screen and (min-width : 595px) and (max-width : 690px) {
+    
+        }
+    
+        @media only screen and (min-width : 480px) and (max-width : 595px) {
+    
+        }
+    
+        @media screen and (min-width : 320px) and (max-width: 375px) {
+            height: 727px;
+            width: 100%;
+            margin-top: 0;
+        }
+
         &--heading {
             display: flex;
             height: 86px;
             width: 42%;
             margin-left: 15%;
 
+            @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+            }
+        
+            @media only screen and (min-width : 690px) and (max-width : 800px) {
+        
+            }
+        
+            @media only screen and (min-width : 595px) and (max-width : 690px) {
+        
+            }
+        
+            @media only screen and (min-width : 480px) and (max-width : 595px) {
+        
+            }
+        
+            @media screen and (min-width : 320px) and (max-width: 375px) {
+                width: 100%;
+                margin-top: 0;
+                margin-left: 0;
+                flex-direction: column;
+            }
+
             &--logo {
                 font-family: Yeseva One, serif;
-                font-style: normal;
-                font-weight: normal;
+                @include font-style-weight-up;
                 font-size: 27px;
                 line-height: 37px;
                 letter-spacing: -0.07em;
-                text-transform: uppercase;
                 color: #E3B873;
+
+                @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+                }
+            
+                @media only screen and (min-width : 690px) and (max-width : 800px) {
+            
+                }
+            
+                @media only screen and (min-width : 595px) and (max-width : 690px) {
+            
+                }
+            
+                @media only screen and (min-width : 480px) and (max-width : 595px) {
+            
+                }
+            
+                @media screen and (min-width : 320px) and (max-width: 375px) {
+                    @include fav-side-margin;
+                    @include font-style-weight-up;
+                    margin-top: 36px;
+                    width: 65.5%;
+                    height: 68px;
+                    display: block;
+                    font-family: Yeseva One, serif;
+                    font-size: 22px;
+                    line-height: 30px;
+                    text-align: center;
+                    letter-spacing: -0.07em;
+                    color: #E3B873;
+                }
             }
             &--underline {
+                display: block;
                 padding-top: 55px;
+
+                @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+                }
+            
+                @media only screen and (min-width : 690px) and (max-width : 800px) {
+            
+                }
+            
+                @media only screen and (min-width : 595px) and (max-width : 690px) {
+            
+                }
+            
+                @media only screen and (min-width : 480px) and (max-width : 595px) {
+            
+                }
+            
+                @media screen and (min-width : 320px) and (max-width: 375px) {
+                    display: none;
+                }
             }
         }
         
@@ -378,44 +941,152 @@
             margin-left: 15%;
             align-content: flex-start;
 
+            @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+            }
+        
+            @media only screen and (min-width : 690px) and (max-width : 800px) {
+        
+            }
+        
+            @media only screen and (min-width : 595px) and (max-width : 690px) {
+        
+            }
+        
+            @media only screen and (min-width : 480px) and (max-width : 595px) {
+        
+            }
+        
+            @media screen and (min-width : 320px) and (max-width: 375px) {
+                height: 517px;
+                width: 100%;
+                margin-left: 0;
+                margin-top: 22px;
+            }
+
             &--main {
                 display: block;
                 height: 86px;
                 width: 98%;
                 margin-top: 10px;
-                font-family: FuturaBookC;
+                font-family: FuturaBookC, sans-serif;
                 font-size: 18px;
-                line-height: 29px;
+                line-height: 30px;
                 color: #FFFFFF;
+
+                @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+                }
+            
+                @media only screen and (min-width : 690px) and (max-width : 800px) {
+            
+                }
+            
+                @media only screen and (min-width : 595px) and (max-width : 690px) {
+            
+                }
+            
+                @media only screen and (min-width : 480px) and (max-width : 595px) {
+            
+                }
+            
+                @media screen and (min-width : 320px) and (max-width: 375px) {
+                    font-family: FuturaBookC;
+                    font-size: 14px;
+                    line-height: 22px;
+                    text-align: center;
+                }
             }
+
             &--cathegory {
+                @include font-style-weight-up;
                 display: inline-block;
                 height: 25px;
                 width: 43%;
                 margin-top: 45px;
                 font-family: Yeseva One, serif;
-                font-style: normal;
-                font-weight: normal;
                 font-size: 18px;
                 line-height: 25px;
-                text-transform: uppercase;
                 color: #E3B873;
+
+                @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+                }
+            
+                @media only screen and (min-width : 690px) and (max-width : 800px) {
+            
+                }
+            
+                @media only screen and (min-width : 595px) and (max-width : 690px) {
+            
+                }
+            
+                @media only screen and (min-width : 480px) and (max-width : 595px) {
+            
+                }
+            
+                @media screen and (min-width : 320px) and (max-width: 375px) {
+                    margin-top: 2px;
+                    font-family: Yeseva One;
+                    font-size: 14px;
+                    line-height: 19px;
+                }
             }
             &--explain {
+                @include book-font-one;
                 display: block;
                 height: 50px;
                 width: 28%;
                 margin-right: 15%;
-                font-family: FuturaBookC;
-                font-size: 15px;
-                line-height: 1.25rem;
                 color: #FFFFFF;
+
+                @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+                }
+            
+                @media only screen and (min-width : 690px) and (max-width : 800px) {
+            
+                }
+            
+                @media only screen and (min-width : 595px) and (max-width : 690px) {
+            
+                }
+            
+                @media only screen and (min-width : 480px) and (max-width : 595px) {
+            
+                }
+            
+                @media screen and (min-width : 320px) and (max-width: 375px) {
+                    font-family: FuturaBookC;
+                    font-size: 14px;
+                    line-height: 19px;
+                }
             }
             &--slider {
                 display: inline-block;
                 height: 59px;
                 width: 100%;
                 padding-top: 25px;
+
+                @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+                }
+            
+                @media only screen and (min-width : 690px) and (max-width : 800px) {
+            
+                }
+            
+                @media only screen and (min-width : 595px) and (max-width : 690px) {
+            
+                }
+            
+                @media only screen and (min-width : 480px) and (max-width : 595px) {
+            
+                }
+            
+                @media screen and (min-width : 320px) and (max-width: 375px) {
+                    display: none;
+                }
 
                 &--dot {
                     cursor: pointer;
@@ -444,6 +1115,26 @@
         display: block;
         width: 59%;
 
+        @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+        }
+    
+        @media only screen and (min-width : 690px) and (max-width : 800px) {
+    
+        }
+    
+        @media only screen and (min-width : 595px) and (max-width : 690px) {
+    
+        }
+    
+        @media only screen and (min-width : 480px) and (max-width : 595px) {
+    
+        }
+    
+        @media screen and (min-width : 320px) and (max-width: 375px) {
+            width: 100%;
+        }
+
         &--cities {
             display: flex;
             position: relative;
@@ -452,6 +1143,26 @@
             width: 80%;
             margin-top: 3%;
             margin-bottom: 5%;
+
+            @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+            }
+        
+            @media only screen and (min-width : 690px) and (max-width : 800px) {
+        
+            }
+        
+            @media only screen and (min-width : 595px) and (max-width : 690px) {
+        
+            }
+        
+            @media only screen and (min-width : 480px) and (max-width : 595px) {
+        
+            }
+        
+            @media screen and (min-width : 320px) and (max-width: 375px) {
+                display: none;
+            }
 
             &--list {
                 display: flex;
@@ -464,11 +1175,9 @@
                 &--item {
                     display: block;
                     font-family: Yeseva One, serif;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 0.875rem;
+                    @include font-style-weight-up;
+                    font-size: 14px;
                     line-height: 19px;
-                    text-transform: uppercase; 
                     color: rgba(255, 255, 255, 0.3);
 
                     a {
@@ -496,6 +1205,28 @@
             overflow: hidden;
             width: 100%;
             height: 482px;
+
+            @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+            }
+        
+            @media only screen and (min-width : 690px) and (max-width : 800px) {
+        
+            }
+        
+            @media only screen and (min-width : 595px) and (max-width : 690px) {
+        
+            }
+        
+            @media only screen and (min-width : 480px) and (max-width : 595px) {
+        
+            }
+        
+            @media screen and (min-width : 320px) and (max-width: 375px) {
+                width: 100%;
+                height: 241.55px;
+                margin-top: -170px;
+            }
 
             img {
                 width: 80%;
@@ -535,31 +1266,24 @@
         display: block;
         height: 82px;
         width: 100%;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
+        @include fav-side-margin;
+        @include center-text;
 
         &--name{
             display: block;
             width: 100%;
             height: 40px;
             padding-top: 10px;
-            font-family: Yeseva One;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.25rem;
-            line-height: 28px;
+            @include yeseva-font-two;
+            @include font-style-weight-up;
             text-align: center;
-            text-transform: uppercase;
             color: #FFFFFF;
         }
         
         &--item {
             display: block;
             position: relative;
-            margin-left: auto;
-            margin-right: auto;
+            @include fav-side-margin;
             margin-top: -25px; 
         }
     }
@@ -593,8 +1317,8 @@
             display: block;
             height: 140px;
             width: 47.3%;
-            font-family: FuturaBookC;
-            font-size: 1.25rem;
+            font-family: FuturaBookC, sans-serif;
+            font-size: 20px;
             line-height: 34px;
             text-align: center;
             color: #363636;
@@ -621,9 +1345,7 @@
             margin-top: 74px;
 
             label {
-                font-family: FuturaBookC;
-                font-size: 15px;
-                line-height: 1.25rem;
+                @include book-font-one;
                 color: rgba(54, 54, 54, 0.5);
                 transform: rotate(-0.07deg);
                 }
@@ -647,9 +1369,7 @@
             background: #E3B873;
             box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
             border-radius: 2px;
-            font-family: FuturaDemiC, sans-serif;
-            font-size: 13px;
-            line-height: 15px;
+            @include demic-font-two;
             text-decoration: none;
             text-align: center;
             text-transform: uppercase;
@@ -664,8 +1384,7 @@
             display: flex;
             width: 60%;
             margin-top: 30px;
-            margin-left: auto;
-            margin-right: auto;
+            @include fav-side-margin;
             justify-content: center;
 
             input {
@@ -688,29 +1407,23 @@
         height: 67px;
         width: 100%;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+        @include fav-side-margin;
         text-align: center;
 
         &--name{
             display: block;
             width: 100%;
             height: 40px;
-            font-family: Yeseva One;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.25rem;
-            line-height: 28px;
+            @include yeseva-font-two;
+            @include font-style-weight-up;
             text-align: center;
-            text-transform: uppercase;
             color: #010101;
         }
         
         &--item {
             display: block;
             position: relative;
-            margin-left: auto;
-            margin-right: auto;
+            @include fav-side-margin;
         }
     }
     
@@ -718,8 +1431,7 @@
         display: flex;
         width: 85.85%;
         height: 608px;
-        margin-right: auto;
-        margin-left: auto;
+        @include fav-side-margin;
         margin-top: 30px;
         justify-content: space-between;
 
@@ -733,18 +1445,14 @@
                 display: block;
                 width: 84.18%;
                 height: 286px;
-                margin-left: auto;
-                margin-right: auto;
+                @include fav-side-margin;
                 margin-top: -127px;
                 background: #FFFFFF;
 
                 span {
                     display: block;
-                    font-family: Yeseva One;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: 25px;
+                    @include yeseva-font-one;
+                    @include font-style-weight;
                     color: #010101;  
                     padding-top: 16px;
                     margin-bottom: 8px;
@@ -754,9 +1462,7 @@
                     margin: 0;
                 }
                 li {
-                    font-family: FuturaBookC;
-                    font-size: 15px;
-                    line-height: 25px;
+                    @include book-font-two;
                     color: #959595;
                 }
             }
@@ -770,12 +1476,8 @@
                 background: #E3B873;
                 border: none;
                 box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-                font-family: Yeseva One;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                line-height: 25px;
-                text-transform: uppercase;
+                @include yeseva-font-one;
+                @include font-style-weight-up;
                 color: #FFFFFF;
             }
             &--confirmation:hover {
@@ -792,6 +1494,26 @@
     background: url(./assets/images/whiteBackground.png);
     background-repeat: no-repeat;
     overflow: hidden;
+
+    @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+    }
+
+    @media only screen and (min-width : 690px) and (max-width : 800px) {
+
+    }
+
+    @media only screen and (min-width : 595px) and (max-width : 690px) {
+
+    }
+
+    @media only screen and (min-width : 480px) and (max-width : 595px) {
+
+    }
+
+    @media screen and (min-width : 320px) and (max-width: 375px) {
+        display: none;
+    }
 }
 
 .order_cycle {
@@ -799,6 +1521,26 @@
     width: 114.1%;
     height: 726px;
     margin-left: -21.1%;
+
+    @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+    }
+
+    @media only screen and (min-width : 690px) and (max-width : 800px) {
+
+    }
+
+    @media only screen and (min-width : 595px) and (max-width : 690px) {
+
+    }
+
+    @media only screen and (min-width : 480px) and (max-width : 595px) {
+
+    }
+
+    @media screen and (min-width : 320px) and (max-width: 375px) {
+        display: none;
+    }
     
     &--cycle {
         display: flex;
@@ -878,20 +1620,17 @@
                 width: 53%;
                 height: 75px;
                 padding-top: 28px;
-                margin-left: auto;
-                margin-right: auto;
+                @include fav-side-margin;
                 color: #FFFFFF;
-                font-family: FuturaDemiC;
-                font-size: 1.25rem;
+                font-family: FuturaDemiC, sans-serif;
+                font-size: 20px;
                 line-height: 25px;
                 text-align: center;
             }
 
             label {
                 display: block;
-                font-family: FuturaBookC;
-                font-size: 15px;
-                line-height: 1.25rem;
+                @include book-font-one;
                 color: rgba(255, 255, 255, 0.5);
                 height: 17px;
                 width: 8.3%;
@@ -925,9 +1664,7 @@
 
                 label {
                     display: block;
-                    font-family: FuturaBookC;
-                    font-size: 15px;
-                    line-height: 1.25rem;
+                    @include book-font-one;
                     color: rgba(255, 255, 255, 0.5);
                     height: 17px;
                     width: 89%;
@@ -956,9 +1693,7 @@
                 background: #E3B873;
                 box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
                 border-radius: 2px;
-                font-family: FuturaDemiC, sans-serif;
-                font-size: 13px;
-                line-height: 15px;
+                @include demic-font-two;
                 text-decoration: none;
                 text-align: center;
                 text-transform: uppercase;
@@ -973,19 +1708,18 @@
         &--pig {
             display: flex;
             margin-top: 38.44px;
-            margin-left: auto;
-            margin-right: auto;
+            @include fav-side-margin;
             width: 88%;
             height: 110px;
             align-items: start;
 
             &--slogan {
                 display: inline-block;
-                font-family: FuturaDemiC;
                 height: 47px;
                 width: 56%;
                 margin-top: 26px;
-                font-size: 1.25rem;
+                font-family: FuturaDemiC, sans-serif;
+                font-size: 20px;
                 line-height: 25px;
                 color: #E3B873;
                 text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15)
@@ -1004,13 +1738,30 @@
     width: 75px;
     border: 15px solid #FFFFFF;
     border-radius: 50%;
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
+    @include yeseva-font-one;
+    @include font-style-weight;
     text-align: center;
     color: #FFFFFF;
+
+    @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+    }
+
+    @media only screen and (min-width : 690px) and (max-width : 800px) {
+
+    }
+
+    @media only screen and (min-width : 595px) and (max-width : 690px) {
+
+    }
+
+    @media only screen and (min-width : 480px) and (max-width : 595px) {
+
+    }
+
+    @media screen and (min-width : 320px) and (max-width: 375px) {
+        display: none;
+    }
 }
 
 .cycle_text {
@@ -1018,6 +1769,26 @@
     height: 42px;
     width: 71%;
     margin-left: 2%;
+
+    @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+    }
+
+    @media only screen and (min-width : 690px) and (max-width : 800px) {
+
+    }
+
+    @media only screen and (min-width : 595px) and (max-width : 690px) {
+
+    }
+
+    @media only screen and (min-width : 480px) and (max-width : 595px) {
+
+    }
+
+    @media screen and (min-width : 320px) and (max-width: 375px) {
+        display: none;
+    }
 }
 
 .fantasies {
@@ -1041,12 +1812,10 @@
             width: 88%;
             height: 66px;
             text-align: inherit;
-            font-family: Yeseva One;
-            font-style: normal;
-            font-weight: normal;
+            font-family: Yeseva One, serif;
+            @include font-style-weight-up;
             font-size: 27px;
             line-height: 37px;
-            text-transform: uppercase;
             color: #E3B873;
         }
         
@@ -1064,7 +1833,7 @@
             
             li {
                 font-family: Proxima Nova;
-                font-size: 1.25rem;
+                font-size: 20px;
                 line-height: 34px;
                 color: #FFFFFF;
                 height: 24px;
@@ -1184,20 +1953,15 @@
 
         &--text {
             display: block;
-            font-family: Yeseva One;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.25rem;
-            line-height: 28px;
+            @include yeseva-font-two;
+            @include font-style-weight-up;
             text-align: center;
-            text-transform: uppercase;
             color: #181818;
         }
         
         &--image {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            @include fav-side-margin;
             margin-top: 12.89px;
         }
         
@@ -1206,11 +1970,8 @@
             height: 57px;
             width: 52.3%;
             margin-top: 24.11px;
-            margin-left: auto;
-            margin-right: auto;
-            font-family: FuturaBookC;
-            font-size: 1.25rem;
-            line-height: 27px;
+            @include fav-side-margin;
+            @include book-font-three;
             text-align: center;
             color: #363636;
         }
@@ -1220,8 +1981,7 @@
         display: flex;
         height: 710px;
         width: 86.05%;
-        margin-left: auto;
-        margin-right: auto;
+        @include fav-side-margin;
         margin-top: 55px;
         padding: 0;
         justify-content: space-between;
@@ -1231,18 +1991,13 @@
             padding-top: 25px;
             margin-bottom: 13x;
             margin-left: 34px;
-            font-family: Yeseva One;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 25px;
+            @include yeseva-font-one;
+            @include font-style-weight;
             color: #363636;
         }
         
         li {
-            font-family: FuturaBookC;
-            font-size: 15px;
-            line-height: 25px;
+            @include book-font-two;
             color: #959595;
         }
         
@@ -1257,12 +2012,8 @@
             background: #E3B873;
             border: none;
             box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
-            font-family: Yeseva One;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 25px;
-            text-transform: uppercase;
+            @include yeseva-font-one;
+            @include font-style-weight-up;
             color: #FFFFFF;
         }
         
@@ -1287,8 +2038,7 @@
                 width: 84.18%;
                 height: 211px;
                 margin-top: -127px;
-                margin-left: auto;
-                margin-right: auto;
+                @include fav-side-margin;
                 background: #FFFFFF;
             }
         }
@@ -1310,8 +2060,7 @@
                 width: 84.18%;
                 height: 286px;
                 margin-top: -127px;
-                margin-left: auto;
-                margin-right: auto;
+                @include fav-side-margin;
                 background: #FFFFFF;
             }
         }
@@ -1333,8 +2082,7 @@
                 width: 84.18%;
                 height: 414px;
                 margin-top: -127px;
-                margin-left: auto;
-                margin-right: auto;
+                @include fav-side-margin;
                 background: #FFFFFF;
             }
         }
@@ -1344,8 +2092,7 @@
         display: flex;
         height: 686px;
         width: 86.02%;
-        margin-left: auto;
-        margin-right: auto;
+        @include fav-side-margin;
         margin-top: 0;
         margin-bottom: 0;
 
@@ -1369,7 +2116,7 @@
                     width: 100%;
                     height: 16px;
                     margin-bottom: 18px;
-                    font-family: FuturaDemiC;
+                    font-family: FuturaDemiC, sans-serif;
                     font-size: 15px;
                     line-height: 21px;
                     text-transform: uppercase;
@@ -1379,12 +2126,10 @@
                     display: block;
                     width: 48.65%;
                     height: 66px;
-                    font-family: Yeseva One;
-                    font-style: normal;
-                    font-weight: normal;
+                    font-family: Yeseva One, serif;
+                    @include font-style-weight-up;
                     font-size: 27px;
                     line-height: 37px;
-                    text-transform: uppercase;
                     color: #E3B873;
                 }
                 &--three {
@@ -1402,33 +2147,26 @@
                     display: block;
                     width: 100%;
                     height: 21px;
-                    font-family: Yeseva One;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: 25px;
-                    text-transform: uppercase;
+                    @include yeseva-font-one;
+                    @include font-style-weight-up;
                     color: #FFFFFF;
                 }
                 &--heading {
                     display: block;
                     width: 100%;
-                    height: 42px;margin-top: 25px;
-                    font-family: Yeseva One;
-                    font-style: normal;
-                    font-weight: normal;
+                    height: 42px;
+                    margin-top: 25px;
+                    font-family: Yeseva One, serif;
+                    @include font-style-weight-up;
                     font-size: 15px;
                     line-height: 23px;
-                    text-transform: uppercase;
                     color: #E3B873;
                 }
                 &--text {
                     display: block;
                     width: 100%;
                     height: 222px;
-                    font-family: FuturaBookC;
-                    font-size: 15px;
-                    line-height: 25px;
+                    @include book-font-two;
                     color: #FFFFFF;
                 }
             }
@@ -1485,17 +2223,15 @@
 
                     span:first-child { 
                         display: block;
-                        font-family: Yeseva One;
-                        font-style: normal;
-                        font-weight: normal;
+                        font-family: Yeseva One, serif;
+                        @include font-style-weight-up;
                         font-size: 15px;
                         line-height: 21px;
-                        text-transform: uppercase;
                         color: rgba(255, 255, 255, 0.445);
                     }
                     span {
                         display: block;
-                        font-family: FuturaBookC;
+                        font-family: FuturaBookC, sans-serif;
                         font-size: 15px;
                         line-height: 18px;
                         color: rgba(255, 255, 255, 0.445);
@@ -1530,33 +2266,24 @@
             display: block;
             height: 26px;
             width: 17.85%;
-            margin-left: auto;
-            margin-right: auto;
-            font-family: Yeseva One;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.25rem;
-            line-height: 28px;
+            @include fav-side-margin;
+            @include yeseva-font-two;
+            @include font-style-weight-up;
             text-align: center;
-            text-transform: uppercase;
             color: #FFFFFF;
         }
         
         &--image {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            @include fav-side-margin;
         }
         
         &--slogan {
             display: block;
             height: 57px;
             width: 32.1%;
-            margin-left: auto;
-            margin-right: auto;
-            font-family: FuturaBookC;
-            font-size: 1.25rem;
-            line-height: 27px;
+            @include fav-side-margin;
+            @include book-font-three;
             text-align: center;
             color: #FFFFFF;
         }
@@ -1566,8 +2293,7 @@
         display: flex;
         width: 73.84%;
         height: 504px;
-        margin-left: auto;
-        margin-right: auto;
+        @include fav-side-margin;
         flex-wrap: nowrap;
         justify-content: space-between;
 
@@ -1592,8 +2318,7 @@
                 height: 322.83px;
                 width: 77.59%;
                 margin-top: -35px;
-                margin-right: auto;
-                margin-left: auto;
+                @include fav-side-margin;
 
             }
 
@@ -1603,8 +2328,7 @@
                 width: 66.4%;
                 margin-top: -82px;
                 z-index: 2;
-                margin-right: auto;
-                margin-left: auto;
+                @include fav-side-margin;
                 background: #FFFFFF;
 
                 span {
@@ -1613,20 +2337,15 @@
                     width: 100%;
                     background: #FFFFFF;
                     background-size: cover;
-                    font-family: FuturaBookC;
-                    font-size: 18px;
-                    line-height: 26px;
+                    @include book-font-four;
                     text-align: center;
                     color: #959595;
                 }
 
                 span:first-child {
                     padding-top: 20px;
-                    font-family: Yeseva One;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: 25px;
+                    @include yeseva-font-one;
+                    @include font-style-weight;
                     text-align: center;
                     color: #181818;
                 }
@@ -1638,13 +2357,11 @@
                     padding-top: 10px;
                     background: #E3B873;
                     background-size: cover;
-                    font-family: Yeseva One;
-                    font-style: normal;
-                    font-weight: normal;
+                    font-family: Yeseva One, serif;
+                    @include font-style-weight-up;
                     font-size: 13px;
-                    line-height: 1.25rem;
+                    line-height: 20px;
                     text-align: center;
-                    text-transform: uppercase;
                     color: #FFFFFF;
                 }
             }
@@ -1659,20 +2376,38 @@
 
         &--image {
             display: block;
-            margin-right: auto;
-            margin-left: auto;
+            @include fav-side-margin;
         }
         
         &--motivate {
             display: block;
             width: 38.75%;
-            margin-right: auto;
-            margin-left: auto;
-            font-family: FuturaBookC;
-            font-size: 1.25rem;
+            @include fav-side-margin;
+            font-family: FuturaBookC, sans-serif;
+            font-size: 20px;
             line-height: 34px;
             text-align: center;
             color: #363636;
+        }
+
+        @media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+        }
+    
+        @media only screen and (min-width : 690px) and (max-width : 800px) {
+    
+        }
+    
+        @media only screen and (min-width : 595px) and (max-width : 690px) {
+            display: none;
+        }
+    
+        @media only screen and (min-width : 480px) and (max-width : 595px) {
+            display: none;
+        }
+    
+        @media screen and (min-width : 320px) and (max-width: 375px) {
+            display: none;
         }
     }
 }
@@ -1692,22 +2427,16 @@
             display: block;
             height: 26px;
             width: 17.85%;
-            margin-left: auto;
-            margin-right: auto;
-            font-family: Yeseva One;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.25rem;
-            line-height: 28px;
+            @include fav-side-margin;
+            @include yeseva-font-two;
+            @include font-style-weight-up;
             text-align: center;
-            text-transform: uppercase;
             color: #181818;
         }
         
         &--image {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            @include fav-side-margin;
             margin-top: 13.22px;
             margin-bottom: 24.16px;
         }
@@ -1716,11 +2445,8 @@
             display: block;
             height: 57px;
             width: 27%;
-            margin-left: auto;
-            margin-right: auto;
-            font-family: FuturaBookC;
-            font-size: 1.25rem;
-            line-height: 27px;
+            @include fav-side-margin;
+            @include book-font-three;
             text-align: center;
             color: #363636;
         }
@@ -1733,8 +2459,7 @@
         height: 455.03px;
         justify-content: space-between;
         margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
+        @include fav-side-margin;
 
         .clients_containers {
             display: flex;
@@ -1760,11 +2485,8 @@
                 margin-left: 6.12%;
                 margin-right: auto;
                 margin-top: 41px;
-                font-family: Yeseva One;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                line-height: 23px;
+                @include yeseva-font-one;
+                @include font-style-weight;
                 color: #181818;
             }
             
@@ -1772,11 +2494,8 @@
                 display: block;
                 width: 86.2%;
                 height: 221px;
-                margin-right: auto;
-                margin-left: auto;
-                font-family: FuturaBookC;
-                font-size: 15px;
-                line-height: 180%;
+                @include fav-side-margin;
+                @include book-font-one;
                 text-transform: lowercase;
                 color: #959595;
             }
@@ -1802,12 +2521,8 @@
                     object-fit: none;
                 }
                 span {
-                    font-family: Yeseva One;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 17px;
-                    line-height: 24px;
-                    text-transform: uppercase;
+                    @include yeseva-font-one;
+                    @include font-style-weight-up;
                     color: #FFFFFF;
                 }
             }
@@ -1832,8 +2547,7 @@
         flex-direction: column;;
         width: 61.32%;
         height: 445.32px;
-        margin-left: auto;
-        margin-right: auto;
+        @include fav-side-margin;
         margin-top: 48px;
         margin-bottom: 52.01px;
         background: #181818;
@@ -1843,21 +2557,16 @@
             height: 26px;
             margin-top: 34.4px;
             margin-bottom: 45.8px;
-            font-family: Yeseva One;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.25rem;
-            line-height: 28px;
+            @include yeseva-font-two;
+            @include font-style-weight-up;
             text-align: center;
-            text-transform: uppercase;
             color: #FFFFFF;
         }
 
         &--form {
             width: 58.9%;
             height: 376.52px;
-            margin-left: auto;
-            margin-right: auto;
+            @include fav-side-margin;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -1867,18 +2576,14 @@
                 width: 44.43%;
 
                 label {
-                    font-family: FuturaBookC;
-                    font-size: 15px;
-                    line-height: 1.25rem;
+                    @include book-font-one;
                     color: rgba(255, 255, 255, 0.5);
                     transform: rotate(-0.07deg);
                 }
     
                 input {
                     display: block;
-                    font-family: FuturaBookC;
-                    font-size: 18px;
-                    line-height: 24px;
+                    @include book-font-four;
                     color: #FFFFFF;
                     background: #181818;
                     outline: 0;
@@ -1894,18 +2599,14 @@
                 width: 100%;
 
                 label {
-                    font-family: FuturaBookC;
-                    font-size: 15px;
-                    line-height: 1.25rem;
+                    @include book-font-one;
                     color: rgba(255, 255, 255, 0.5);
                     transform: rotate(-0.07deg);
                 }
     
                 input {
                     display: block;
-                    font-family: FuturaBookC;
-                    font-size: 18px;
-                    line-height: 24px;
+                    @include book-font-four;
                     color: #FFFFFF;
                     background: #181818;
                     outline: 0;
@@ -1921,16 +2622,13 @@
                 color: #FFFFFF;
                 width: 54%;
                 height: 49px;
-                margin-left: auto;
-                margin-right: auto;
+                @include fav-side-margin;
                 justify-content: space-around;
                 align-items: center;
 
                 label {
                     display: block;
-                    font-family: FuturaBookC;
-                    font-size: 15px;
-                    line-height: 1.25rem;
+                    @include book-font-one;
                     color: rgba(255, 255, 255, 0.5);
                     height: 17px;
                     width: 89%;
@@ -1959,8 +2657,8 @@
                 background: #E3B873;
                 box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
                 border-radius: 2px;
-                font-family: FuturaDemiC;
-                font-size: 0.9375rem;
+                font-family: FuturaDemiC, sans-serif;
+                font-size: 15px;
                 line-height: 26px;
                 text-align: center;
                 text-transform: uppercase;
@@ -1976,17 +2674,12 @@
     &--address {
         height: 199.33px;
         width: 40.91%;
-        margin-right: auto;
-        margin-left: auto;
+        @include fav-side-margin;
         text-align: center;
 
         &--law {
-            font-family: Yeseva One;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.25rem;
-            line-height: 28px;
-            text-transform: uppercase;
+            @include yeseva-font-two;
+            @include font-style-weight-up;
             color: #E3B873;
 
             a {
@@ -2001,8 +2694,7 @@
             justify-content: space-between;
             width: 12%;
             height: 30px;
-            margin-left: auto;
-            margin-right: auto;
+            @include fav-side-margin;
 
             img {
                 cursor: pointer;
@@ -2012,8 +2704,7 @@
         &--map {
             height: 465px;
             width: 64.24%;
-            margin-right: auto;
-            margin-left: auto;
+            @include fav-side-margin;
             margin-top: -51.04px;
         }
     }
@@ -2030,9 +2721,7 @@
     justify-content: space-around;
 
     h2 {
-        font-family: FuturaDemiC;
-        font-size: 0.875rem;
-        line-height: 1rem;
+        @include demic-font-one;
         text-transform: uppercase;
         color: #E3B873;
     }
