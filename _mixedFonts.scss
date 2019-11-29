@@ -1,0 +1,68 @@
+@mixin demic-font-one {
+  font-family: FuturaDemiC, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin demic-font-two {
+  font-family: FuturaDemiC, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+@mixin yeseva-font-one {
+  font-family: Yeseva One, serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@mixin yeseva-font-two {
+  font-family: Yeseva One, serif;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@mixin book-font-one {
+  font-family: FuturaBookC, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+@mixin book-font-two {
+  font-family: FuturaBookC, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@mixin book-font-three {
+  font-family: FuturaBookC, sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+@mixin book-font-four {
+  font-family: FuturaBookC, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin fav-side-margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin font-style-weight {
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-style-weight-up {
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+@mixin center-text {
+  text-align: center;
+  justify-content: center;
+}

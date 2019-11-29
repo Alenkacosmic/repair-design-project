@@ -1480,6 +1480,15 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .fantasies {
+    width: 100%;
+    height: 438px;
+    flex-direction: column;
+    background-image: unset;
+    background: linear-gradient(#FFFFFF 60%, #252525 40%);
+  }
+}
 .fantasies--countries {
   display: block;
   width: 28.55%;
@@ -1487,6 +1496,16 @@
   height: 640px;
   align-items: center;
   margin-top: 290px;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .fantasies--countries {
+    width: 100%;
+    height: 70px;
+    margin-top: 55px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .fantasies--countries--logo {
   display: block;
@@ -1501,10 +1520,31 @@
   line-height: 37px;
   color: #E3B873;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .fantasies--countries--logo {
+    width: 310px;
+    height: 66px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+  }
+}
 .fantasies--countries--list {
   display: block;
   height: 618px;
   text-align: justify;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .fantasies--countries--list {
+    display: none;
+  }
 }
 .fantasies--countries--list ul {
   height: 100%;
@@ -1535,12 +1575,68 @@
   margin-right: auto;
   margin-left: 9%;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .fantasies--samples {
+    display: flex;
+    height: 310px;
+    width: 100%;
+    margin: 0;
+  }
+}
 .fantasies--samples--left {
   display: block;
   position: relative;
   height: 945.86px;
   width: 41.48%;
   margin-bottom: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .fantasies--samples--left {
+    height: 242px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.fantasies--samples--left--press_me {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .fantasies--samples--left--press_me {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    margin-top: 30%;
+    margin-left: 86%;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    background-image: url(./assets/images/left.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.fantasies--samples--left--press_me_right {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .fantasies--samples--left--press_me_right {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    margin-top: 30%;
+    margin-left: 3%;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    background-image: url(./assets/images/right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 .fantasies--samples--left--up {
   overflow: hidden;
@@ -1549,6 +1645,13 @@
   width: 100%;
   margin-top: 117px;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .fantasies--samples--left--up {
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+  }
+}
 .fantasies--samples--left--up img {
   position: absolute;
   width: 830px;
@@ -1556,12 +1659,25 @@
   margin-left: -67%;
   margin-top: -5px;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .fantasies--samples--left--up img {
+    width: 356PX;
+    height: 248PX;
+    margin-left: -2%;
+    margin-top: 0;
+  }
+}
 .fantasies--samples--left--down {
   overflow: hidden;
   position: relative;
   height: 349.47px;
   width: 100%;
   margin-top: 39.53px;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .fantasies--samples--left--down {
+    display: none;
+  }
 }
 .fantasies--samples--left--down img {
   position: absolute;
@@ -1576,6 +1692,11 @@
   width: 43.48%;
   margin-top: 36px;
   margin-left: 4.4%;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .fantasies--samples--right {
+    display: none;
+  }
 }
 .fantasies--samples--right--up {
   overflow: hidden;
