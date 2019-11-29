@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .full_wrapper {
   display: block;
   position: relative;
@@ -10,7 +11,7 @@
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .full_wrapper {
     max-width: 375px;
-    height: 8796px;
+    height: 8773px;
   }
 }
 
@@ -58,8 +59,9 @@
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .nav_box--logo h1 {
-    line-height: 14px;
+    font-family: FuturaDemiC, sans-serif;
     font-size: 11px;
+    line-height: 14px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
@@ -83,7 +85,7 @@
   margin-top: 5%;
   height: 100%;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .nav_box--navbar--list li:first-child > a {
   color: #E3B873;
@@ -123,7 +125,6 @@
     font-family: FuturaDemiC, sans-serif;
     font-size: 12px;
     line-height: 14px;
-    text-align: right;
     color: #FFFFFF;
   }
 }
@@ -258,10 +259,10 @@
   width: 85%;
   height: 49.3%;
   font-family: Yeseva One, serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 40px;
   line-height: 53px;
+  font-style: normal;
+  font-weight: normal;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -273,12 +274,8 @@
     width: 100%;
     height: 60px;
     font-family: Yeseva One, serif;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: uppercase;
     font-size: 23px;
     line-height: 31px;
-    color: #FFFFFF;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -302,7 +299,7 @@
     margin-right: auto;
     font-family: FuturaBookC, sans-serif;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 24px;
     width: 98%;
     height: 104px;
     margin-top: 16px;
@@ -340,11 +337,6 @@
   .intro_section--introduction--buttons--calculate {
     width: 90.3%;
     height: 51px;
-    font-family: FuturaDemiC;
-    font-size: 13px;
-    line-height: 15px;
-    text-align: center;
-    color: #FFFFFF;
   }
 }
 .intro_section--introduction--buttons--calculate:hover {
@@ -373,11 +365,6 @@
   .intro_section--introduction--buttons--submit {
     width: 90.3%;
     height: 51px;
-    font-family: FuturaDemiC;
-    font-size: 13px;
-    line-height: 15px;
-    text-align: center;
-    color: #FFFFFF;
   }
 }
 .intro_section--introduction--buttons--submit:hover {
@@ -408,11 +395,11 @@
 }
 .intro_section--scroll_down--scroll_text {
   font-family: Yeseva One, serif;
+  font-size: 14px;
+  line-height: 19px;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 19px;
   margin-right: 5%;
   color: #FFFFFF;
   cursor: pointer;
@@ -495,11 +482,11 @@
 }
 .completed_projects--description--heading--logo {
   font-family: Yeseva One, serif;
+  font-size: 27px;
+  line-height: 37px;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 27px;
-  line-height: 37px;
   letter-spacing: -0.07em;
   color: #E3B873;
 }
@@ -561,7 +548,7 @@
     width: 91%;
     margin-left: auto;
     margin-right: auto;
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 14px;
     line-height: 22px;
     text-align: center;
@@ -584,7 +571,7 @@
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .completed_projects--description--text--cathegory {
     margin-top: 2px;
-    font-family: Yeseva One;
+    font-family: Yeseva One, serif;
     font-size: 14px;
     line-height: 19px;
   }
@@ -601,7 +588,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .completed_projects--description--text--explain {
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 14px;
     line-height: 19px;
   }
@@ -670,11 +657,11 @@
 .completed_projects--show--cities--list--item {
   display: block;
   font-family: Yeseva One, serif;
+  font-size: 14px;
+  line-height: 19px;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 19px;
   color: rgba(255, 255, 255, 0.3);
 }
 .completed_projects--show--cities--list--item a {
@@ -819,13 +806,13 @@
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .online_control--logo--name {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
+    font-family: Yeseva One, serif;
     font-size: 22px;
     line-height: 30px;
-    text-align: center;
+    font-style: normal;
+    font-weight: normal;
     text-transform: uppercase;
+    text-align: center;
     color: #FFFFFF;
   }
 }
@@ -905,7 +892,7 @@
     height: 100%;
     width: 100%;
     margin-top: 15px;
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
@@ -953,7 +940,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .online_control--form--fullfil label {
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 15px;
     line-height: 20px;
     color: rgba(255, 255, 255, 0.5);
@@ -974,7 +961,7 @@
     border-color: #FFFFFF;
     float: left;
     color: #FFFFFF;
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 50px;
@@ -991,8 +978,8 @@
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
   font-family: FuturaDemiC, sans-serif;
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 15px;
+  line-height: 26px;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -1006,7 +993,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 185px;
-    font-family: FuturaDemiC;
+    font-family: FuturaDemiC, sans-serif;
     font-size: 15px;
     line-height: 26px;
     text-align: center;
@@ -1033,7 +1020,7 @@
     margin-left: 7px;
     margin-right: 55px;
     margin-top: 135px;
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
@@ -1089,13 +1076,13 @@
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .repair_types--logo--name {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
+    font-family: Yeseva One, serif;
     font-size: 22px;
     line-height: 30px;
-    text-align: center;
+    font-style: normal;
+    font-weight: normal;
     text-transform: uppercase;
+    text-align: center;
     color: #181818;
   }
 }
@@ -1172,11 +1159,11 @@
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .repair_types--samples--container--description span {
     display: block;
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
+    font-family: Yeseva One, serif;
     font-size: 15px;
     line-height: 21px;
+    font-style: normal;
+    font-weight: normal;
     color: #363636;
     padding-top: 16px;
     margin-bottom: 8px;
@@ -1194,7 +1181,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .repair_types--samples--container--description li {
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 13px;
     line-height: 22px;
     color: #959595;
@@ -1224,11 +1211,11 @@
     width: 190.43px;
     margin-left: 0;
     margin-top: -26px;
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
+    font-family: Yeseva One, serif;
     font-size: 15px;
     line-height: 21px;
+    font-style: normal;
+    font-weight: normal;
     text-transform: uppercase;
     color: #FFFFFF;
   }
@@ -1408,7 +1395,7 @@
   border-radius: 2px;
   font-family: FuturaDemiC, sans-serif;
   font-size: 13px;
-  line-height: 15px;
+  line-height: 18px;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -1513,26 +1500,26 @@
   height: 66px;
   text-align: inherit;
   font-family: Yeseva One, serif;
+  font-size: 27px;
+  line-height: 37px;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 27px;
-  line-height: 37px;
   color: #E3B873;
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .fantasies--countries--logo {
     width: 310px;
     height: 66px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
+    font-family: Yeseva One, serif;
     font-size: 22px;
     line-height: 30px;
-    text-align: center;
+    font-style: normal;
+    font-weight: normal;
     text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     color: #E3B873;
   }
 }
@@ -1734,11 +1721,32 @@
   background-repeat: no-repeat;
   background-position: 0px 495px;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1790зч;
+    background: #252525;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+  }
+}
 .design_project--logo {
   display: block;
   justify-content: center;
   width: 100%;
   height: 160px;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--logo {
+    width: 100%;
+    height: 178px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 39px;
+  }
 }
 .design_project--logo--text {
   display: block;
@@ -1751,11 +1759,29 @@
   text-align: center;
   color: #181818;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--logo--text {
+    font-family: Yeseva One, serif;
+    font-size: 22px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
 .design_project--logo--image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 12.89px;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--logo--image {
+    margin-top: 15.89px;
+    margin-bottom: 23.11px;
+  }
 }
 .design_project--logo--description {
   display: block;
@@ -1770,6 +1796,19 @@
   text-align: center;
   color: #363636;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--logo--description {
+    width: 293px;
+    height: 76px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: FuturaBookC, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
 .design_project--types {
   display: flex;
   height: 710px;
@@ -1779,6 +1818,15 @@
   margin-top: 55px;
   padding: 0;
   justify-content: space-between;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types {
+    flex-direction: column;
+    height: 1612px;
+    width: 100%;
+    margin-top: 0;
+    justify-content: space-between;
+  }
 }
 .design_project--types span {
   display: block;
@@ -1792,11 +1840,32 @@
   font-weight: normal;
   color: #363636;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types span {
+    padding-top: 18px;
+    margin-bottom: 13px;
+    margin-left: 31px;
+    font-family: Yeseva One, serif;
+    font-size: 15px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: normal;
+    color: #363636;
+  }
+}
 .design_project--types li {
   font-family: FuturaBookC, sans-serif;
   font-size: 15px;
   line-height: 25px;
   color: #959595;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types li {
+    font-family: FuturaBookC, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    color: #959595;
+  }
 }
 .design_project--types--submit {
   display: block;
@@ -1817,6 +1886,21 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types--submit {
+    width: 190.43px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: 0;
+    font-family: Yeseva One, serif;
+    font-size: 15px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
 .design_project--types--submit:hover {
   background: #e3ce73;
 }
@@ -1825,11 +1909,25 @@
   height: 535px;
   width: 31.64%;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types--mini {
+    height: 420px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .design_project--types--mini--image {
   display: block;
   width: 100%;
   height: 421px;
   margin: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types--mini--image {
+    height: 365.15px;
+    width: 340px;
+  }
 }
 .design_project--types--mini--list {
   position: relative;
@@ -1841,16 +1939,41 @@
   margin-right: auto;
   background: #FFFFFF;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types--mini--list {
+    width: 270px;
+    height: 177px;
+    margin-top: -142.15px;
+    margin-left: 0;
+    background: #FFFFFF;
+  }
+}
 .design_project--types--standard {
   display: block;
   height: 608px;
   width: 31.64%;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types--standard {
+    height: 484px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .design_project--types--standard--image {
   display: block;
   width: 100%;
   height: 421px;
   margin: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types--standard--image {
+    height: 365.15px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .design_project--types--standard--list {
   position: relative;
@@ -1862,16 +1985,41 @@
   margin-right: auto;
   background: #FFFFFF;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types--standard--list {
+    height: 241px;
+    width: 270px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: -142.15px;
+  }
+}
 .design_project--types--full {
   display: block;
   height: 710px;
   width: 31.64%;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types--full {
+    height: 484px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .design_project--types--full--image {
   display: block;
   width: 100%;
   height: 421px;
   margin: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types--full--image {
+    height: 365.15px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .design_project--types--full--list {
   position: relative;
@@ -1883,6 +2031,16 @@
   margin-right: auto;
   background: #FFFFFF;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--types--full--list {
+    overflow: hidden;
+    height: 241px;
+    width: 270px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: -142.15px;
+  }
+}
 .design_project--steps {
   display: flex;
   height: 686px;
@@ -1891,6 +2049,11 @@
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .design_project--steps {
+    display: none;
+  }
 }
 .design_project--steps--describe {
   display: flex;
@@ -1923,11 +2086,11 @@
   width: 48.65%;
   height: 66px;
   font-family: Yeseva One, serif;
+  font-size: 27px;
+  line-height: 37px;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 27px;
-  line-height: 37px;
   color: #E3B873;
 }
 .design_project--steps--describe--head--three {
@@ -1958,11 +2121,11 @@
   height: 42px;
   margin-top: 25px;
   font-family: Yeseva One, serif;
+  font-size: 15px;
+  line-height: 23px;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 15px;
-  line-height: 23px;
   color: #E3B873;
 }
 .design_project--steps--describe--telling--text {
@@ -2025,11 +2188,11 @@
 .design_project--steps--show--explain--stepby span:first-child {
   display: block;
   font-family: Yeseva One, serif;
+  font-size: 15px;
+  line-height: 21px;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 15px;
-  line-height: 21px;
   color: rgba(255, 255, 255, 0.445);
 }
 .design_project--steps--show--explain--stepby span {
@@ -2068,6 +2231,15 @@
   width: 100%;
   height: 158.53px;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .team--logo {
+    height: 143px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 76px;
+  }
+}
 .team--logo--name {
   display: block;
   height: 26px;
@@ -2086,13 +2258,13 @@
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .team--logo--name {
     width: 100%;
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
+    font-family: Yeseva One, serif;
     font-size: 22px;
     line-height: 30px;
-    text-align: center;
+    font-style: normal;
+    font-weight: normal;
     text-transform: uppercase;
+    text-align: center;
     color: #FFFFFF;
   }
 }
@@ -2117,9 +2289,10 @@
   .team--logo--slogan {
     height: 42px;
     width: 340px;
+    margin-top: 23px;
     margin-left: auto;
     margin-right: auto;
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
@@ -2139,8 +2312,9 @@
   .team--look_at {
     flex-direction: column;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    height: 1480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .team--look_at .team_containers {
@@ -2213,11 +2387,11 @@
   background: #E3B873;
   background-size: cover;
   font-family: Yeseva One, serif;
+  font-size: 13px;
+  line-height: 20px;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 13px;
-  line-height: 20px;
   text-align: center;
   color: #FFFFFF;
 }
@@ -2264,6 +2438,11 @@
   flex-wrap: wrap;
   width: 100%;
   height: 750px;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .clients {
+    display: none;
+  }
 }
 .clients--logo {
   display: block;
@@ -2339,7 +2518,7 @@
   margin-top: 41px;
   font-family: Yeseva One, serif;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 23px;
   font-style: normal;
   font-weight: normal;
   color: #181818;
@@ -2352,7 +2531,7 @@
   margin-right: auto;
   font-family: FuturaBookC, sans-serif;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 27px;
   text-transform: lowercase;
   color: #959595;
 }
@@ -2378,8 +2557,8 @@
 }
 .clients--real .clients_containers--buttons span {
   font-family: Yeseva One, serif;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 17px;
+  line-height: 24px;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
@@ -2398,6 +2577,17 @@
   background-size: 1440px 953.9px;
   background-position: bottom;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location {
+    width: 100%;
+    height: 1055px;
+    background-color: #252525;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+  }
+}
 .question_location--question {
   display: flex;
   flex-direction: column;
@@ -2408,6 +2598,15 @@
   margin-top: 48px;
   margin-bottom: 52.01px;
   background: #181818;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--question {
+    width: 100%;
+    height: 617px;
+    margin-top: 0;
+    margin-bottom: auto;
+    background: #252525;
+  }
 }
 .question_location--question--title {
   width: 100%;
@@ -2423,6 +2622,24 @@
   text-align: center;
   color: #FFFFFF;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--question--title {
+    width: 257px;
+    height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 67px;
+    margin-bottom: 52px;
+    font-family: Yeseva One, serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
 .question_location--question--form {
   width: 58.9%;
   height: 376.52px;
@@ -2432,9 +2649,24 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--question--form {
+    width: 340px;
+    height: 419px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .question_location--question--form--item {
   height: 45.05px;
   width: 44.43%;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--question--form--item {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 62px;
+  }
 }
 .question_location--question--form--item label {
   font-family: FuturaBookC, sans-serif;
@@ -2443,11 +2675,19 @@
   color: rgba(255, 255, 255, 0.5);
   transform: rotate(-0.07deg);
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--question--form--item label {
+    font-family: FuturaBookC, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
 .question_location--question--form--item input {
   display: block;
   font-family: FuturaBookC, sans-serif;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 24px;
   color: #FFFFFF;
   background: #181818;
   outline: 0;
@@ -2456,9 +2696,19 @@
   border-color: rgba(54, 54, 54, 0.3);
   float: left;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--question--form--item input {
+    background: #252525;
+  }
+}
 .question_location--question--form--asking {
   height: 45px;
   width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--question--form--asking {
+    margin-bottom: 29px;
+  }
 }
 .question_location--question--form--asking label {
   font-family: FuturaBookC, sans-serif;
@@ -2471,7 +2721,7 @@
   display: block;
   font-family: FuturaBookC, sans-serif;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 24px;
   color: #FFFFFF;
   background: #181818;
   outline: 0;
@@ -2479,6 +2729,11 @@
   border-width: 0 0 2px;
   border-color: rgba(54, 54, 54, 0.3);
   float: left;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--question--form--asking input {
+    background: #252525;
+  }
 }
 .question_location--question--form--agree {
   display: flex;
@@ -2490,16 +2745,26 @@
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--question--form--agree {
+    color: #FFFFFF;
+    width: 300px;
+    height: 18px;
+    margin-left: 0;
+    margin-bottom: 59px;
+  }
+}
 .question_location--question--form--agree label {
   display: block;
   font-family: FuturaBookC, sans-serif;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 22px;
   color: rgba(255, 255, 255, 0.5);
   height: 17px;
   width: 89%;
   margin-left: 1px;
   margin-top: 0;
+  color: #FFFFFF;
 }
 .question_location--question--form--agree input {
   display: block;
@@ -2509,6 +2774,12 @@
   height: 18px;
   border-width: 0 0 2px;
   border-color: rgba(54, 54, 54, 0.3);
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--question--form--agree input {
+    width: 18px;
+    height: 18px;
+  }
 }
 .question_location--question--form--submit {
   display: block;
@@ -2527,17 +2798,46 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--question--form--submit {
+    width: 340px;
+    height: 51px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
 .question_location--question--form--submit:hover {
   background: #e3ce73;
 }
 .question_location--address {
-  height: 199.33px;
-  width: 40.91%;
+  display: flex;
+  flex-direction: column;
+  height: 629px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--address {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 470px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+  }
+}
 .question_location--address--law {
+  display: block;
+  width: 589px;
+  height: 52px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: Yeseva One, serif;
   font-size: 20px;
   line-height: 28px;
@@ -2545,6 +2845,20 @@
   font-weight: normal;
   text-transform: uppercase;
   color: #E3B873;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--address--law {
+    width: 340px;
+    height: 70.56px;
+    font-family: Yeseva One, serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: #E3B873;
+  }
 }
 .question_location--address--law a {
   text-decoration: none;
@@ -2554,20 +2868,35 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 12%;
+  width: 5%;
   height: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--address--link {
+    height: 39px;
+    width: 98.89px;
+  }
 }
 .question_location--address--link img {
   cursor: pointer;
 }
 .question_location--address--map {
   height: 465px;
-  width: 64.24%;
+  width: 925px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -51.04px;
+  margin-top: 51.04px;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .question_location--address--map {
+    height: 255px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
 }
 
 .footer {
@@ -2579,6 +2908,11 @@
   background: #010101;
   align-items: center;
   justify-content: space-around;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .footer {
+    display: none;
+  }
 }
 .footer h2 {
   font-family: FuturaDemiC, sans-serif;
