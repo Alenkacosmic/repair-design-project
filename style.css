@@ -626,12 +626,22 @@
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
+  display: block;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-right: 5%;
   color: #FFFFFF;
   cursor: pointer;
 }
 .intro_section--scroll_down--scroll_text:hover {
   color: #E3B873;
+}
+.intro_section--scroll_down--scroll_button {
+  display: block;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 @media only screen and (min-width: 320px) and (max-width: 1200px) {
   .intro_section--scroll_down {
