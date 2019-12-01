@@ -16,6 +16,12 @@
   line-height: $FBCheight;
 }
 
+@mixin futura_font ($Fsize, $Fheight) {
+  font-family: FuturaMediumC, sans-serif;
+  font-size: $Fsize;
+  line-height: $Fheight;
+}
+
 @mixin fav-side-margin {
   margin-left: auto;
   margin-right: auto;

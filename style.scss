@@ -16,6 +16,7 @@
 
     @media only screen and (min-width : 480px) and (max-width : 800px) {
         max-width: 800px;
+        height: 11200px;
     }
 
     @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -119,11 +120,7 @@
         width: 50%;
         height: 100%;
 
-        @media only screen and (min-width : 480px) and (max-width : 800px) {
-            display: none;
-        }
-    
-        @media screen and (min-width : 320px) and (max-width: 480px) {
+        @media only screen and (min-width : 320px) and (max-width : 800px) {
             display: none;
         } 
 
@@ -177,18 +174,18 @@
         }
     
         @media only screen and (min-width : 480px) and (max-width : 800px) {
+            @include demic_font (12px, 14px);
             width: 25%;
             padding-top: 2%;
             text-decoration: none;
-            @include demic_font (12px, 14px);
             color: #FFFFFF;
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
+            @include demic_font (12px, 14px);
             width: 35%;
             padding-top: 3%;
             text-decoration: none;
-            @include demic_font (12px, 14px);
             color: #FFFFFF;
         } 
     }
@@ -243,16 +240,8 @@
         height: 8450px;
     }
 
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-
+    @media only screen and (min-width : 480px) and (max-width : 800px) {
+        height: 11100px;
     }
 
     @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -316,11 +305,7 @@
             width: 5%;
         }
     
-        @media only screen and (min-width : 480px) and (max-width : 800px) {
-            display: none;
-        }
-    
-        @media screen and (min-width : 320px) and (max-width: 480px) {
+        @media only screen and (min-width : 320px) and (max-width : 800px) {
             display: none;
         }
     }
@@ -335,21 +320,18 @@
         @media only screen and (min-width : 800px) and (max-width : 1200px) {
             width: 95%;
             overflow: hidden;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/FontPagePic.png);
             background-position: 44% 0;
         }
     
         @media only screen and (min-width : 480px) and (max-width : 800px) {
             width: 100%;
             overflow: hidden;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/FontPagePic.png);
             background-position: 44% 0;
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
             width: 100%;
             overflow: hidden;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/FontPagePic.png);
             background-position: 44% 0;
         }
 
@@ -506,22 +488,6 @@
                 color: #FFFFFF;
                 text-transform: uppercase;
 
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
-                }
-            
                 @media screen and (min-width : 320px) and (max-width: 480px) {
                     width: 90.3%;
                     height: 51px;
@@ -547,22 +513,6 @@
                 margin: 0;
                 color: #FFFFFF;
                 text-transform: uppercase;
-
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
-                }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
                     width: 90.3%;
@@ -573,16 +523,13 @@
             &--submit:hover {
                 background: #ffffff94;
             }
-
-            
         }
     }
     
     &--scroll_down {
+        @include center-text;
         display: flex;
         position: absolute;
-        justify-content: center;
-        align-items: center;
         height: 97px;
         width: 17.15%;
         top: 7%;
@@ -618,20 +565,13 @@
         height: 632px;
     }
 
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-
-    }
+    @media only screen and (min-width : 480px) and (max-width : 800px) {
+        padding-top: 25px;
+        height: 750px;
+        flex-direction: column;
+    }   
 
     @media screen and (min-width : 320px) and (max-width: 480px) {
-        display: flex;
         height: 727px;
         margin-top: 0;
         flex-direction: column;
@@ -648,23 +588,14 @@
         margin-top: 120px;
 
         @media only screen and (min-width : 800px) and (max-width : 1200px) {
-            display: flex;
-            flex-direction: column;
-            width: 41%;
             height: 100%;
             margin-top: 8px;
         }
     
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
+        @media only screen and (min-width : 480px) and (max-width : 800px) {
+            width: 100%;
+            height: 270px;
+            margin-top: 0;
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -680,22 +611,14 @@
             margin-left: 15%;
 
             @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                display: flex;
-                height: 86px;
                 width: 88%;
                 margin-left: 12%;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                height: 55px;
+                width: 50%;
+                @include fav-side-margin;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -714,59 +637,30 @@
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
                     @include yeseva_font (22px, 59px);
-                    font-style: normal;
-                    font-weight: normal;
-                    text-transform: uppercase;
-                    letter-spacing: -0.07em;
-                    color: #E3B873;
+                    @include fav-side-margin;
                 }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    @include yeseva_font (22px, 37px);
+                    @include fav-side-margin;
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
+                    @include yeseva_font (22px, 30px);
                     @include fav-side-margin;
-                    @include font-style-weight-up;
                     margin-top: 36px;
                     width: 65.5%;
                     height: 68px;
                     display: block;
-                    @include yeseva_font (22px, 30px);
                     text-align: center;
-                    letter-spacing: -0.07em;
-                    color: #E3B873;
                 }
             }
+
             &--underline {
                 display: block;
                 padding-top: 55px;
 
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                    display: none;
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-                    display: none;
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-                    display: none;
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-                    display: none;
-                }
-            
-                @media screen and (min-width : 320px) and (max-width: 480px) {
+                @media only screen and (min-width : 320px) and (max-width : 1200px) {
                     display: none;
                 }
             }
@@ -781,24 +675,15 @@
             align-content: flex-start;
 
             @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                display: flex;
-                flex-wrap: wrap;
                 height: 570px;
                 width: 88%;
                 margin-left: 12%;
-                align-content: flex-start;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include fav-side-margin;
+                width: 90%;
+                height: 215px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -808,86 +693,65 @@
             }
 
             &--main {
+                @include book_font (18px, 30px);
                 display: block;
                 height: 86px;
                 width: 98%;
                 margin-top: 10px;
-                @include book_font (18px, 30px);
                 color: #FFFFFF;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                    display: block;
+                    @include fav-side-margin;
                     height: 225px;
                     width: 85%;
-                    margin-top: 10px;
-                    font-family: FuturaBookC, sans-serif;
-                    font-size: 18px;
                     text-align: center;
-                    line-height: 30px;
-                    color: #FFFFFF; 
                 }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    @include book_font (16px, 28px);
+                    display: block;
+                    height: 86px;
+                    width: 100%;
+                    margin-top: 0;
+                    text-align: center;
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
-                    width: 91%;
                     @include fav-side-margin;
                     @include book_font (14px, 22px);
+                    width: 91%;
                     text-align: center;
                     margin-bottom: 350px;
                 }
             }
 
             &--cathegory {
+                @include yeseva_font (18px, 25px);
                 @include font-style-weight-up;
                 display: inline-block;
                 height: 25px;
                 width: 43%;
                 margin-top: 45px;
-                @include yeseva_font (18px, 25px);
                 color: #E3B873;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                    font-style: normal;
-                    font-weight: normal;
-                    text-transform: uppercase;
-                    display: inline-block;
-                    height: 25px;
-                    width: 43%;
+                    @include yeseva_font (14px, 20px);
                     margin-top: 27px;
-                    font-family: Yeseva One, serif;
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: #E3B873;
                 }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    @include yeseva_font (17px, 19px);
+                    text-align: center;
+                    width: 50%;
+                    margin-top: 7px;
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
-                    margin-top: 2px;
                     @include yeseva_font (14px, 19px);
+                    margin-top: 2px;
                 }
             }
+
             &--explain {
                 @include book_font (15px, 20px);
                 display: block;
@@ -897,56 +761,31 @@
                 color: #FFFFFF;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                    font-family: FuturaBookC, sans-serif;
-                    font-size: 14px;
-                    line-height: 20px;
-                    display: block;
-                    height: 50px;
+                    @include book_font (14px, 20px);
                     width: 29%;
-                    margin-right: 15%;
                     margin-top: 17px;
-                    color: #FFFFFF;
                 }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    @include book_font (15px, 20px);
+                    height: 26px;
+                    width: 50%;
+                    margin-right: 0;
+                    text-align: center;
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
                     @include book_font (14px, 19px);
                 }
             }
+
             &--slider {
                 display: inline-block;
                 height: 59px;
                 width: 100%;
                 padding-top: 25px;
 
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                    display: none;
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-                    display: none;
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-                    display: none;
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-                    display: none;
-                }
-            
-                @media screen and (min-width : 320px) and (max-width: 480px) {
+                @media only screen and (min-width : 320px) and (max-width : 1200px) {
                     display: none;
                 }
 
@@ -960,9 +799,11 @@
                     display: inline-block;
                     transition: background-color 0.6s ease;
                 }
+
                 &--dot:hover {
                     background: #FFFFFF;
                 }
+
                 &--turn {
                     cursor: pointer;
                     height: 15px;
@@ -977,22 +818,11 @@
         display: block;
         width: 59%;
 
-        @media only screen and (min-width : 800px) and (max-width : 1200px) {
+        @media screen and (min-width : 480px) and (max-width: 800px) {
+            width: 100%;
+            height: 396px;
+        }
 
-        }
-    
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
-        }
-    
         @media screen and (min-width : 320px) and (max-width: 480px) {
             width: 100%;
         }
@@ -1007,28 +837,10 @@
             margin-bottom: 5%;
 
             @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                display: flex;
-                position: relative;
-                justify-content: space-between;
-                height: 50px;
                 width: 100%;
-                margin-top: 3%;
-                margin-bottom: 5%;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
-            }
-        
-            @media screen and (min-width : 320px) and (max-width: 480px) {
+            @media screen and (min-width : 320px) and (max-width: 800px) {
                 display: none;
             }
 
@@ -1041,9 +853,9 @@
                 align-items: flex-end;
 
                 &--item {
-                    display: block;
                     @include yeseva_font (14px, 19px);
                     @include font-style-weight-up;
+                    display: block;
                     color: rgba(255, 255, 255, 0.3);
 
                     @media only screen and (min-width : 800px) and (max-width : 1200px) {
@@ -1083,20 +895,12 @@
                 align-items: center;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                width: 100%;
+                height: 396px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
-                position: relative;
                 width: 100%;
                 height: 241.55px;
                 margin-top: -480px;
@@ -1113,16 +917,8 @@
                     height: 241.55px;
                 }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    height: 96%;
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -1134,21 +930,21 @@
 
             &--press_me_right {
                 display: none;
-
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: absolute;
+                    height: 36px;
+                    width: 36px;
+                    margin-top: 30%;
+                    margin-left: 1%;
+                    padding: 0;
+                    border: 0;
+                    background-color: transparent;
+                    background-image: url(./assets/images/right.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -1178,7 +974,7 @@
                 padding: 0;
                 border: 0;
                 background-color: transparent;
-                background-image: url(./assets/images/left-slide.svg);
+                background-image: url(./assets/images/left.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
 
@@ -1186,16 +982,8 @@
                     display: none;
                 }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    margin-top: 30%;
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -1213,7 +1001,6 @@
                     background-size: contain;
                 }         
             }
-
         }
     }
 }
@@ -1232,16 +1019,9 @@
         height: 924px;
     }
 
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-
+    @media only screen and (min-width : 480px) and (max-width : 800px) {
+        height: 880px;
+        background-size: 100% 270px;
     }
 
     @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -1250,69 +1030,43 @@
     } 
 
     &--logo {
+        @include fav-side-margin;
+        @include center-text;
         display: block;
         position: relative;
         height: 82px;
         width: 100%;
-        @include fav-side-margin;
-        @include center-text;
-    
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
-        }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
-            position: relative;
             width: 224px;
             height: 74px;
-            margin-left: auto;
-            margin-right: auto;
             background: #252525;
-        } 
+        }
 
-
-        &--name{
+        &--name {
+            @include yeseva_font (20px, 28px);
+            @include font-style-weight-up;
             display: block;
             width: 100%;
             height: 40px;
             padding-top: 10px;
-            @include yeseva_font (20px, 28px);
-            @include font-style-weight-up;
             text-align: center;
             color: #FFFFFF;
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include yeseva_font (22px, 37px);
+                padding-top: 0;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
                 @include yeseva_font (22px, 30px);
-                @include font-style-weight-up;
-                text-align: center;
-                color: #FFFFFF;
             }
         }
         
         &--item {
+            @include fav-side-margin;
             display: block;
             position: relative;
-            @include fav-side-margin;
             margin-top: -25px; 
         }
     }
@@ -1328,25 +1082,16 @@
             width: 817px;
         }
     
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
+        @media only screen and (min-width : 480px) and (max-width : 800px) {
+            @include fav-side-margin;
+            height: 380px;
+            width: 95%;    
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
-            display: flex;
+            @include fav-side-margin;
             height: 207px;
             width: 330px;
-            margin-left: auto;
-            margin-right: auto;
-            justify-content: center;
         } 
     }
     
@@ -1359,32 +1104,15 @@
         align-items: center;
         justify-content: space-around;
 
-        @media only screen and (min-width : 800px) and (max-width : 1200px) {
+        @media only screen and (min-width : 480px) and (max-width : 1200px) {
             margin-top: 10px;
         }
     
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
-        }
-    
         @media screen and (min-width : 320px) and (max-width: 480px) {
-            display: flex;
+            @include fav-side-margin;
             width: 340px;
             height: 180px;
             margin-top: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
         } 
 
         &--line {
@@ -1393,20 +1121,8 @@
             height: 2px;
             width: 3.5%;
 
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
+            @media only screen and (min-width : 480px) and (max-width : 1200px) {
                 margin-top: 0;
-            }
-        
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -1416,36 +1132,28 @@
         }
         
         &--info {
+            @include book_font (20px, 34px);
             display: block;
             height: 140px;
             width: 47.3%;
-            @include book_font (20px, 34px);
             text-align: center;
             color: #363636;
 
             @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                width: 76.3%;
                 @include book_font (18px, 32px);
+                width: 76.3%;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include book_font (18px, 32px);
+                width: 86.3%;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include book_font (14px, 24px);
                 height: 100%;
                 width: 100%;
                 margin-top: 15px;
-                @include book_font (14px, 24px);
-                text-align: center;
                 color: #FFFFFF;
             } 
         }
@@ -1461,20 +1169,8 @@
         flex-wrap: wrap;
         align-content: flex-start;
 
-        @media only screen and (min-width : 800px) and (max-width : 1200px) {
+        @media only screen and (min-width : 480px) and (max-width : 1200px) {
             flex-direction: column;
-        }
-    
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -1495,22 +1191,14 @@
                 margin-top: 0;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                width: 95%;
+                margin-top: 0;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include fav-side-margin;
                 width: 340px;
-                margin-left: auto;
-                margin-right: auto;
                 justify-content: space-between;
             } 
 
@@ -1519,22 +1207,6 @@
                 color: rgba(54, 54, 54, 0.5);
                 transform: rotate(-0.07deg);
 
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
-                }
-            
                 @media screen and (min-width : 320px) and (max-width: 480px) {
                     @include book_font (15px, 20px);
                     color: rgba(255, 255, 255, 0.5);
@@ -1546,38 +1218,21 @@
                 border-width: 0 0 2px;
                 border-color: rgba(54, 54, 54, 0.3);
                 float: left;
-
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
-                }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
+                    @include book_font (18px, 25px);
                     background: #252525;
-                    outline: 0;
                     width: 340px;
-                    border-width: 0 0 2px;
                     border-color: #FFFFFF;
                     float: left;
                     color: #FFFFFF;
-                    @include book_font (18px, 25px);
                     margin-bottom: 50px;
                 } 
             }
         }
         
         &--submit {
+            @include demic_font (15px, 26px);
             display: block;
             height: 51px;
             width: 12.81%;
@@ -1587,7 +1242,6 @@
             background: #E3B873;
             box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
             border-radius: 2px;
-            @include demic_font (15px, 26px);
             text-decoration: none;
             text-align: center;
             text-transform: uppercase;
@@ -1598,29 +1252,17 @@
                 margin-top: 13px;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                height: 42px;
+                width: 60.81%;
+                margin-top: 25px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
-                position: absolute;
-                height: 51px;
-                width: 340px;
                 @include fav-side-margin;
+                position: absolute;
+                width: 340px;
                 margin-top: 185px;
-                @include demic_font (15px, 26px);
-                text-align: center;
-                text-transform: uppercase;
-                color: #FFFFFF;
-
             }   
         }
         
@@ -1629,36 +1271,30 @@
         }
         
         &--agree {
+            @include fav-side-margin;
             display: flex;
             width: 60%;
             margin-top: 30px;
-            @include fav-side-margin;
             justify-content: center;
 
             @media only screen and (min-width : 800px) and (max-width : 1200px) {
                 margin-top: 6px;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include fav-side-margin;
+                width: 70%;
+                margin-top: 15px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include book_font (16px, 22px);
                 position: relative;
                 height: 18px;
                 width: 286px;
                 margin-left: 7px;
                 margin-right: 55px;
                 margin-top: 135px;
-                @include book_font (16px, 22px);
                 color: #FFFFFF;
             }   
 
@@ -1681,118 +1317,70 @@
         height: 680px;
     }
 
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-
+    @media only screen and (min-width : 480px) and (max-width : 800px) {
+        height: 1690px;
     }
 
     @media screen and (min-width : 320px) and (max-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
         height: 1786px;
-
     }   
 
     &--logo {
+        @include fav-side-margin;
         display: block;
         height: 67px;
         width: 100%;
         justify-content: center;
-        @include fav-side-margin;
         text-align: center;
-
-        @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-        }
-    
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
-        }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
             margin-top: 83px;
             margin-bottom: 40px;
         }   
 
-        &--name{
+        &--name {
+            @include yeseva_font (20px, 28px);
+            @include font-style-weight-up;
             display: block;
             width: 100%;
             height: 40px;
-            @include yeseva_font (20px, 28px);
-            @include font-style-weight-up;
             text-align: center;
             color: #010101;
 
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-            }
-        
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include yeseva_font (22px, 37px);
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
                 @include yeseva_font (22px, 30px);
-                @include font-style-weight-up;
-                text-align: center;
                 color: #181818;
             }
         }
         
         &--item {
+            @include fav-side-margin;
             display: block;
             position: relative;
-            @include fav-side-margin;
         }
     }
     
     &--samples {
+        @include fav-side-margin;
         display: flex;
         width: 85.85%;
         height: 608px;
-        @include fav-side-margin;
         margin-top: 30px;
         justify-content: space-between;
 
         @media only screen and (min-width : 800px) and (max-width : 1200px) {
             width: 100%;
-            margin-top: 30px;
         }
     
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
+        @media only screen and (min-width : 480px) and (max-width : 800px) {
+            flex-direction: column;
+            max-width: 380px;
+            height: 1623px;
+            align-items: center;
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -1817,23 +1405,21 @@
 
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                width: 100%;
+                height: 600px;
+
+                img {
+                    @include fav-side-margin;
+                    width: 100%;
+                    height: 400px;
+                }
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include fav-side-margin;
                 height: 484px;
                 width: 340px;
-                margin-left: auto;
-                margin-right: auto;
 
                 img {
                     width: 340px;
@@ -1842,11 +1428,11 @@
             }   
 
             &--description {
+                @include fav-side-margin;
                 position: relative;
                 display: block;
                 width: 84.18%;
                 height: 286px;
-                @include fav-side-margin;
                 margin-top: -127px;
                 background: #FFFFFF;
 
@@ -1854,16 +1440,12 @@
                     margin-left: 0;
                 }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    @include fav-side-margin;
+                    width: 75%;
+                    height: 261px;
+                    margin-top: -154px;
+                    background: #FFFFFF;
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -1874,38 +1456,17 @@
                 }   
 
                 span {
-                    display: block;
                     @include yeseva_font (18px, 25px);
                     @include font-style-weight;
+                    display: block;
                     color: #010101;  
                     padding-top: 16px;
                     margin-bottom: 8px;
                     margin-left: 9%;
-
-                    @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                    }
-                
-                    @media only screen and (min-width : 690px) and (max-width : 800px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 595px) and (max-width : 690px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 480px) and (max-width : 595px) {
-                
-                    }
                 
                     @media screen and (min-width : 320px) and (max-width: 480px) {
-                            display: block;
-                            @include yeseva_font (15px, 21px);
-                            @include font-style-weight;
-                            color: #363636;
-                            padding-top: 16px;
-                            margin-bottom: 8px;
-                            margin-left: 9%;
+                        @include yeseva_font (15px, 21px);
+                        color: #363636;
                     }   
                 }
 
@@ -1916,31 +1477,16 @@
                 li {
                     @include book_font (15px, 25px);
                     color: #959595;
-
-                    @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                    }
-                
-                    @media only screen and (min-width : 690px) and (max-width : 800px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 595px) and (max-width : 690px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 480px) and (max-width : 595px) {
-                
-                    }
                 
                     @media screen and (min-width : 320px) and (max-width: 480px) {
                         @include book_font (13px, 22px);
-                        color: #959595;
                     } 
                 }
             }
 
             &--confirmation {
+                @include yeseva_font (18px, 25px);
+                @include font-style-weight-up;
                 position: relative;
                 display: block;
                 height: 54px;
@@ -1950,8 +1496,6 @@
                 background: #E3B873;
                 border: none;
                 box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-                @include yeseva_font (18px, 25px);
-                @include font-style-weight-up;
                 color: #FFFFFF;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
@@ -1959,26 +1503,17 @@
                     margin-left: 0;
                 }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    @include fav-side-margin;
+                    height: 39px;
+                    margin-top: -37px;
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
+                    @include yeseva_font (15px, 21px);
                     height: 40px;
                     width: 190.43px;
                     margin-left: 0;
-                    margin-top: -26px;
-                    @include yeseva_font (15px, 21px);
-                    @include font-style-weight-up;
-                    color: #FFFFFF;
                 }  
             }
 
@@ -2001,19 +1536,7 @@
         height: 680px;
     }
 
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-        display: none;
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-        display: none;
-    }
-
-    @media screen and (min-width : 320px) and (max-width: 480px) {
+    @media only screen and (min-width : 320px) and (max-width : 800px) {
         display: none;
     }
 }
@@ -2024,23 +1547,7 @@
     height: 726px;
     margin-left: -21.1%;
 
-    @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-    }
-
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-        display: none;
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-        display: none;
-    }
-
-    @media screen and (min-width : 320px) and (max-width: 480px) {
+    @media only screen and (min-width : 320px) and (max-width : 800px) {
         display: none;
     }
     
@@ -2061,11 +1568,7 @@
             border-radius: 50%;
             border: 3px solid #E3B873;
 
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                display: none;
-            }
-        
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
+            @media only screen and (min-width : 320px) and (max-width : 1200px) {
                 display: none;
             }
         }
@@ -2084,7 +1587,7 @@
                 width: 80%;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
                 margin-left: 33%;
             }
         }
@@ -2103,7 +1606,7 @@
                 width: 80%;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
                 margin-left: 33%;
             }
         }
@@ -2122,7 +1625,7 @@
                 width: 80%;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
                 margin-left: 33%;
             }
         }
@@ -2141,7 +1644,7 @@
                 width: 80%;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
                 margin-left: 33%;
             }
         }
@@ -2162,40 +1665,30 @@
             margin-top: 100px;
 
             @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                display: block;
                 height: 556px;
                 width: 117%;
-                background: #010101;
                 margin-top: 87px;
-            }
-        
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-                
             }
 
             &--title {
+                @include demic_font (20px, 25px);
+                @include fav-side-margin;
                 display: block;
                 width: 53%;
                 height: 75px;
                 padding-top: 28px;
-                @include fav-side-margin;
                 color: #FFFFFF;
-                @include demic_font (20px, 25px);
                 text-align: center;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
                     @include demic_font (18px, 21px);
                     width: 76%;
                 }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-                    
-                }
             }
 
             label {
-                display: block;
                 @include book_font (15px, 20px);
+                display: block;
                 color: rgba(255, 255, 255, 0.5);
                 height: 17px;
                 width: 8.3%;
@@ -2204,10 +1697,8 @@
             }
 
             input {
+                @include futura_font (18px, 25px);
                 display: block;
-                font-family: FuturaMediumC;
-                font-size: 18px;
-                line-height: 25px;
                 color: #FFFFFF;
                 margin-left: 9.7%;
                 background: #010101;
@@ -2228,8 +1719,8 @@
                 align-items: center;
 
                 label {
-                    display: block;
                     @include book_font (15px, 20px);
+                    display: block;
                     color: rgba(255, 255, 255, 0.5);
                     height: 17px;
                     width: 89%;
@@ -2249,6 +1740,7 @@
             }
 
             &--submit {
+                @include demic_font (13px, 18px);
                 display: block;
                 height: 51px;
                 width: 42%;
@@ -2258,19 +1750,14 @@
                 background: #E3B873;
                 box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
                 border-radius: 2px;
-                @include demic_font (13px, 18px);
                 text-decoration: none;
                 text-align: center;
                 text-transform: uppercase;
                 color: #FFFFFF;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                    width: 82%;
                     @include fav-side-margin;
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-                    
+                    width: 82%;
                 }
             }
 
@@ -2280,49 +1767,33 @@
         }
         
         &--pig {
+            @include fav-side-margin;
             display: flex;
             margin-top: 38.44px;
-            @include fav-side-margin;
             width: 88%;
             height: 110px;
             align-items: start;
 
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                display: none;
-            }
-        
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-                display: none;
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-                display: none;
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-                display: none;
-            }
-        
-            @media screen and (min-width : 320px) and (max-width: 480px) {
+            @media only screen and (min-width : 320x) and (max-width : 1200px) {
                 display: none;
             }
 
             &--slogan {
+                @include demic_font (20px, 25px);
                 display: inline-block;
                 height: 47px;
                 width: 56%;
                 margin-top: 26px;
-                @include demic_font (20px, 25px);
                 color: #E3B873;
                 text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15)
             }
         }
-
     }
-
 }
 
 .cycle_number {
+    @include yeseva_font (18px, 25px);
+    @include font-style-weight;
     display: block;
     background: #E3B873;
     background-repeat: no-repeat;
@@ -2330,28 +1801,10 @@
     width: 75px;
     border: 15px solid #FFFFFF;
     border-radius: 50%;
-    @include yeseva_font (18px, 25px);
-    @include font-style-weight;
     text-align: center;
     color: #FFFFFF;
 
-    @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-    }
-
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-
-    }
-
-    @media screen and (min-width : 320px) and (max-width: 480px) {
+    @media screen and (min-width : 320px) and (max-width: 800px) {
         display: none;
     }
 }
@@ -2362,23 +1815,7 @@
     width: 71%;
     margin-left: 2%;
 
-    @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-    }
-
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-
-    }
-
-    @media screen and (min-width : 320px) and (max-width: 480px) {
+    @media screen and (min-width : 320px) and (max-width: 800px) {
         display: none;
     }
 }
@@ -2395,16 +1832,13 @@
         height: 1124px;
     }
 
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-
+    @media only screen and (min-width : 480px) and (max-width : 800px) {
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        height: 1250px;
+        padding-bottom: 25px;
+        background-size: cover;
     }
 
     @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -2423,79 +1857,49 @@
         align-items: center;
         margin-top: 290px;
 
-        @media only screen and (min-width : 800px) and (max-width : 1200px) {
-            display: block;
-            width: 28.55%;
-            margin-left: 3.88%;
-            height: 790px;
-            align-items: center;
-            margin-top: 180px;
-        }
-    
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
+        @media only screen and (min-width : 480px) and (max-width : 800px) {
+            @include fav-side-margin;
+            width: 90%;
+            height: 95px;
+            margin-top: 20px;
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
+            @include fav-side-margin;
             width: 100%;
             height: 70px;
             margin-top: 55px;
             margin-bottom: 24px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         &--logo {
+            @include yeseva_font (27px, 37px);
+            @include font-style-weight-up;
             display: block;
             width: 88%;
             height: 66px;
             text-align: inherit;
-            @include yeseva_font (27px, 37px);
-            @include font-style-weight-up;
             color: #E3B873;
 
             @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                display: block;
+                @include yeseva_font (25px, 37px);
                 width: 101%;
                 height: 128px;
-                text-align: inherit;
-                font-family: Yeseva One, serif;
-                font-size: 25px;
-                line-height: 37px;
-                font-style: normal;
-                font-weight: normal;
-                text-transform: uppercase;
-                color: #E3B873;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include yeseva_font (22px, 37px);
+                @include fav-side-margin;
+                width: 300px;
+                text-align: center;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include yeseva_font (22px, 30px);
+                @include fav-side-margin;
                 width: 310px;
                 height: 66px;
-                @include yeseva_font (22px, 30px);
-                @include font-style-weight-up;
-                @include fav-side-margin;
                 text-align: center;
-                color: #E3B873;
             }
         }
         
@@ -2503,24 +1907,8 @@
             display: block;
             height: 618px;
             text-align: justify;
-
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                
-            }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-                display: none;
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-                display: none;
-            }
-        
-            @media screen and (min-width : 320px) and (max-width: 480px) {
+            @media screen and (min-width : 320px) and (max-width: 800px) {
                 display: none;
             }
             
@@ -2544,11 +1932,6 @@
                     font-size: 18px;
                     line-height: 34px;
                 }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-    
             }
             
             li:first-child {
@@ -2569,25 +1952,15 @@
         width: 59.24%;
         margin-right: auto;
         margin-left: 9%;
-
-        @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-        }
     
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
+        @media only screen and (min-width : 480px) and (max-width : 800px) {
+            @include fav-side-margin;
+            width: 90%;
+            height: 990px;
+            justify-content: space-between;
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
-            display: flex;
             height: 310px;
             width: 100%;
             margin: 0;
@@ -2600,47 +1973,18 @@
             width: 41.48%;
             margin-bottom: 0;
 
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-            }
-        
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                height: 900px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include fav-side-margin;
                 height: 242px;
                 width: 340px;
-                margin-left: auto;
-                margin-right: auto;
             }
 
             &--press_me {
                 display: none;
-
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
-                }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
                     cursor: pointer;
@@ -2661,22 +2005,6 @@
 
             &--press_me_right {
                 display: none;
-
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
-                }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
                     cursor: pointer;
@@ -2701,21 +2029,9 @@
                 height: 556.86px;
                 width: 100%;
                 margin-top: 117px;
-
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    margin-top: 54px;
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -2730,22 +2046,6 @@
                     height: 564px;
                     margin-left: -67%;
                     margin-top: -5px;
-
-                    @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                    }
-                
-                    @media only screen and (min-width : 690px) and (max-width : 800px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 595px) and (max-width : 690px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 480px) and (max-width : 595px) {
-                
-                    }
                 
                     @media screen and (min-width : 320px) and (max-width: 480px) {
                         width: 356PX;
@@ -2763,20 +2063,8 @@
                 width: 100%;
                 margin-top: 39.53px;
 
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    margin-top: 30px;
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -2791,6 +2079,7 @@
                 }
             }
         }
+
         &--right {
             display: block;
             position: relative;
@@ -2798,21 +2087,11 @@
             width: 43.48%;
             margin-top: 36px;
             margin-left: 4.4%;
-
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-            }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                margin-top: 0;
+                margin-left: 0;
+                height: 990px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -2832,12 +2111,17 @@
                     margin-left: -8%;
                 }
             }
+            
             &--down {
                 overflow: hidden;
                 position: relative;
                 height: 625.23px;
                 width: 100%;
                 margin-top: 36.77px;
+
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    margin-top: 30px;
+                }
 
                 img {
                     position: absolute;
@@ -2864,26 +2148,16 @@
         height: 1530px;
     }
 
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-
+    @media only screen and (min-width : 480px) and (max-width : 800px) {
+        background-size: 100% 1200px;
+        height: 2100px;
+        margin-bottom: 50px;
     }
 
     @media screen and (min-width : 320px) and (max-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 1790зч;
+        height: 1790px;
         background: #252525;
         background-size: cover;
-        background-repeat: no-repeat;
         background-position: 0;
     }
 
@@ -2892,83 +2166,39 @@
         justify-content: center;
         width: 100%;
         height: 160px;
-
-        @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-        }
     
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
+        @media only screen and (min-width : 480px) and (max-width : 800px) {
+            height: 210px;
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
+            @include fav-side-margin;
             width: 100%;
             height: 178px;
-            margin-right: auto;
-            margin-left: auto;
             margin-bottom: 39px;
         }
 
         &--text {
-            display: block;
             @include yeseva_font (20px, 28px);
             @include font-style-weight-up;
+            display: block;
             text-align: center;
             color: #181818;
-
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-            }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include yeseva_font (22px, 37px);
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
                 @include yeseva_font (22px, 30px);
-                @include font-style-weight-up;
-                text-align: center;
-                color: #FFFFFF;
             }
         }
         
         &--image {
-            display: block;
             @include fav-side-margin;
+            display: block;
             margin-top: 12.89px;
 
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-            }
-        
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
-            }
-        
             @media screen and (min-width : 320px) and (max-width: 480px) {
                 margin-top: 15.89px;
                 margin-bottom: 23.11px;
@@ -2976,82 +2206,54 @@
         }
         
         &--description {
+            @include fav-side-margin;
+            @include book_font (20px, 27px);
             display: block;
             height: 57px;
             width: 52.3%;
             margin-top: 24.11px;
-            @include fav-side-margin;
-            @include book_font (20px, 27px);
             text-align: center;
             color: #363636;
 
             @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                display: block;
-                height: 57px;
+                @include book_font (18px, 25px);
                 width: 84.3%;
-                margin-top: 24.11px;
-                margin-left: auto;
-                margin-right: auto;
-                font-family: FuturaBookC, sans-serif;
-                font-size: 18px;
-                line-height: 25px;
-                text-align: center;
-                color: #363636;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include book_font (18px, 32px);
+                width: 90%;
+                height: 100px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include book_font (15px, 20px);
                 width: 293px;
                 height: 76px;
-                @include fav-side-margin;
-                @include book_font (15px, 20px);
-                text-align: center;
-                color: #FFFFFF;
             }
         }
     }
     
     &--types {
+        @include fav-side-margin;
         display: flex;
         height: 710px;
         width: 86.05%;
-        @include fav-side-margin;
         margin-top: 55px;
         padding: 0;
         justify-content: space-between;
 
         @media only screen and (min-width : 800px) and (max-width : 1200px) {
-            display: flex;
             height: 639px;
             width: 97.05%;
-            margin-left: auto;
-            margin-right: auto;
             margin-top: 10px;
-            padding: 0;
-            justify-content: space-between;
         }
     
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
+        @media only screen and (min-width : 480px) and (max-width : 800px) {
+            flex-direction: column;
+            width: 95%;
+            height: 7895px;
+            margin-top: 0;
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -3059,41 +2261,21 @@
             height: 1612px;
             width: 100%;
             margin-top: 0;
-            justify-content: space-between;
         }
 
         span {
+            @include yeseva_font (18px, 25px);
+            @include font-style-weight;
             display: block;
             padding-top: 25px;
             margin-bottom: 13x;
             margin-left: 34px;
-            @include yeseva_font (18px, 25px);
-            @include font-style-weight;
             color: #363636;
-
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-            }
-        
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
-            }
-        
+      
             @media screen and (min-width : 320px) and (max-width: 480px) {
-                padding-top: 18px;
-                margin-bottom: 13px;
-                margin-left: 31px;
                 @include yeseva_font (15px, 21px);
-                @include font-style-weight;
-                color: #363636;
+                padding-top: 18px;
+                margin-left: 31px;
             }
         }
         
@@ -3101,29 +2283,14 @@
             @include book_font (15px, 25px);
             color: #959595;
 
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-            }
-        
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
-            }
-        
             @media screen and (min-width : 320px) and (max-width: 480px) {
-                @include book_font (13px, 22px);
-                color: #959595;  
+                @include book_font (13px, 22px);  
             }     
         }
         
         &--submit {
+            @include yeseva_font (18px, 25px);
+            @include font-style-weight-up;
             display: block;
             position: relative;
             width: 58.16%;
@@ -3134,34 +2301,18 @@
             background: #E3B873;
             border: none;
             box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
-            @include yeseva_font (18px, 25px);
-            @include font-style-weight-up;
             color: #FFFFFF;
-
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                margin-left: 0;
-            }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include fav-side-margin;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include yeseva_font (15px, 21px);
                 width: 190.43px;
                 height: 40px;
                 margin-top: -20px;
                 margin-left: 0;
-                @include yeseva_font (15px, 21px);
-                @include font-style-weight-up;
-                color: #FFFFFF;
             }             
         }
         
@@ -3178,23 +2329,16 @@
                 height: 437px;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include fav-side-margin;
+                width: 90%;
+                max-width: 390px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include fav-side-margin;
                 height: 420px;
                 width: 340px;
-                margin-left: auto;
-                margin-right: auto;
             }
 
             &--image {
@@ -3207,18 +2351,6 @@
                     height: 325px;
                 }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
-                }
-            
                 @media screen and (min-width : 320px) and (max-width: 480px) {
                     height: 365.15px;
                     width: 340px;
@@ -3226,28 +2358,16 @@
             }
 
             &--list {
+                @include fav-side-margin;
                 position: relative;
                 display: block;
                 width: 84.18%;
                 height: 211px;
                 margin-top: -127px;
-                @include fav-side-margin;
                 background: #FFFFFF;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
                     margin-left: 0;
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -3255,7 +2375,6 @@
                     height: 177px;
                     margin-top: -142.15px;
                     margin-left: 0;
-                    background: #FFFFFF;
                 }                
             }
         }
@@ -3269,23 +2388,16 @@
                 height: 512px;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include fav-side-margin;
+                width: 90%;
+                max-width: 390px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include fav-side-margin;
                 height: 484px;
                 width: 340px;
-                margin-left: auto;
-                margin-right: auto;
             }   
 
             &--image {
@@ -3298,49 +2410,24 @@
                     height: 325px;
                 }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
-                }
-            
                 @media screen and (min-width : 320px) and (max-width: 480px) {
+                    @include fav-side-margin;
                     height: 365.15px;
                     width: 340px;
-                    margin-left: auto;
-                    margin-right: auto;
                 } 
             }
 
             &--list {
+                @include fav-side-margin;
                 position: relative;
                 display: block;
                 width: 84.18%;
                 height: 286px;
                 margin-top: -127px;
-                @include fav-side-margin;
                 background: #FFFFFF;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
                     margin-left: 0;
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -3362,23 +2449,16 @@
                 height: 640px;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include fav-side-margin;
+                width: 90%;
+                max-width: 390px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include fav-side-margin;
                 height: 484px;
                 width: 340px;
-                margin-left: auto;
-                margin-right: auto;
             }   
 
             &--image {
@@ -3391,49 +2471,24 @@
                     height: 325px;
                 }
             
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
-                }
-            
                 @media screen and (min-width : 320px) and (max-width: 480px) {
+                    @include fav-side-margin;
                     height: 365.15px;
                     width: 340px;
-                    margin-left: auto;
-                    margin-right: auto;
                 }
             }
 
             &--list {
+                @include fav-side-margin;
                 position: relative;
                 display: block;
                 width: 84.18%;
                 height: 414px;
                 margin-top: -127px;
-                @include fav-side-margin;
                 background: #FFFFFF;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
                     margin-left: 0;
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -3449,10 +2504,10 @@
     }
     
     &--steps {
+        @include fav-side-margin;
         display: flex;
         height: 686px;
         width: 86.02%;
-        @include fav-side-margin;
         margin-top: 0;
         margin-bottom: 0;
 
@@ -3460,19 +2515,7 @@
             width: 98%;
         }
     
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
-        }
-    
-        @media screen and (min-width : 320px) and (max-width: 480px) {
+        @media screen and (min-width : 320px) and (max-width: 800px) {
             display: none;
         }
 
@@ -3486,13 +2529,10 @@
             padding: 0;
 
             @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                display: flex;
                 flex-wrap: nowrap;
                 flex-direction: column;
                 width: 50%;
                 height: 300px;
-                margin: 0;
-                padding: 0;
             }
 
             &--head {
@@ -3506,11 +2546,11 @@
                 }
 
                 &--one {
+                    @include demic_font (15px, 21px);
                     display: block;
                     width: 100%;
                     height: 16px;
                     margin-bottom: 18px;
-                    @include demic_font (15px, 21px);
                     text-transform: uppercase;
                     color: #FFFFFF;
 
@@ -3520,11 +2560,11 @@
                 }
 
                 &--two {
+                    @include yeseva_font (27px, 37px);
+                    @include font-style-weight-up;
                     display: block;
                     width: 48.65%;
                     height: 66px;
-                    @include yeseva_font (27px, 37px);
-                    @include font-style-weight-up;
                     color: #E3B873;
 
                     @media only screen and (min-width : 800px) and (max-width : 1200px) {
@@ -3555,49 +2595,38 @@
                 }
 
                 &--number {
+                    @include yeseva_font (18px, 25px);
+                    @include font-style-weight-up;
                     display: block;
                     width: 100%;
                     height: 21px;
-                    @include yeseva_font (18px, 25px);
-                    @include font-style-weight-up;
                     color: #FFFFFF;
                 }
 
                 &--heading {
+                    @include yeseva_font (15px, 23px);
+                    @include font-style-weight-up;
                     display: block;
                     width: 100%;
                     height: 42px;
                     margin-top: 25px;
-                    @include yeseva_font (15px, 23px);
-                    @include font-style-weight-up;
                     color: #E3B873;
 
                     @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                        display: block;
-                        width: 100%;
-                        height: 42px;
+                        @include yeseva_font (14px, 23px);
                         margin-top: 0;
-                        font-family: Yeseva One, serif;
-                        font-size: 14px;
-                        line-height: 23px;
-                        font-style: normal;
-                        font-weight: normal;
-                        text-transform: uppercase;
-                        color: #E3B873;
                     }
                 }
 
                 &--text {
+                    @include book_font (15px, 25px);
                     display: block;
                     width: 100%;
                     height: 222px;
-                    @include book_font (15px, 25px);
                     color: #FFFFFF;
 
                     @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                        font-family: FuturaBookC, sans-serif;
-                        font-size: 13px;
-                        line-height: 23px;
+                        @include book_font (13px, 23px);
                         height: 195px;
                     }
                 }
@@ -3623,9 +2652,11 @@
                     display: inline-block;
                     transition: background-color 0.6s ease;
                 }
+
                 &--dot:hover {
                     background: #FFFFFF;
                 }
+
                 &--turn {
                     cursor: pointer;
                     height: 15px;
@@ -3672,24 +2703,21 @@
                     margin-right: 15.12%;
 
                     @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                        display: block;
-                        position: relative;
                         width: 46.68%;
                         height: 71.03px;
                         margin-right: 0.12%;
                     }
 
-
-                    span:first-child { 
-                        display: block;
+                    span:first-child {
                         @include yeseva_font (15px, 21px);
                         @include font-style-weight-up;
+                        display: block;
                         color: rgba(255, 255, 255, 0.445);
                     }
 
                     span {
-                        display: block;
                         @include book_font (15px, 18px);
+                        display: block;
                         color: rgba(255, 255, 255, 0.445);
                     }
                 }
@@ -3720,16 +2748,9 @@
         height: 730px;
     }
 
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-
+    @media only screen and (min-width : 480px) and (max-width : 800px) {
+        height: 2000px;
+        background-size: cover;
     }
 
     @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -3748,115 +2769,81 @@
             height: 135px;
         }
     
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
+        @media only screen and (min-width : 480px) and (max-width : 800px) {
+            height: 170px;
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
+            @include fav-side-margin;
             height: 143px;
             width: 340px;
-            margin-left: auto;
-            margin-right: auto;
             margin-top: 76px;
         }
 
         &--name {
-            display: block;
-            height: 26px;
-            width: 17.85%;
             @include fav-side-margin;
             @include yeseva_font (20px, 28px);
             @include font-style-weight-up;
+            display: block;
+            height: 26px;
+            width: 17.85%;
             text-align: center;
             color: #FFFFFF;
 
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-            }
-        
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include yeseva_font (22px, 37px);
+                height: 50px;
+                width: 100%;
+                margin-top: 15px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
-                width: 100%;
                 @include yeseva_font (22px, 30px);
-                @include font-style-weight-up;
-                text-align: center;
-                color: #FFFFFF;
+                width: 100%;
             }
         }
         
         &--image {
-            display: block;
             @include fav-side-margin;
+            display: block;
         }
         
         &--slogan {
+            @include fav-side-margin;
+            @include book_font (20px, 27px);
             display: block;
             height: 57px;
             width: 32.1%;
-            @include fav-side-margin;
-            @include book_font (20px, 27px);
             text-align: center;
             color: #FFFFFF;
 
             @media only screen and (min-width : 800px) and (max-width : 1200px) {
+                @include book_font (18px, 34px);
                 height: 40px;
                 width: 88%;
                 margin-top: 24.11px;
-                margin-left: auto;
-                margin-right: auto;
-                font-family: FuturaBookC, sans-serif;
-                font-size: 18px;
-                line-height: 34px;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include book_font (18px, 32px);
+                width: 90%;
+                margin-top: 10px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include book_font (15px, 20px);
                 height: 42px;
                 width: 340px;
                 margin-top: 23px;
-                @include fav-side-margin;
-                @include book_font (15px, 20px);
-                text-align: center;
-                color: #FFFFFF;
             }   
         }
     }
     
     &--look_at {
+        @include fav-side-margin;
         display: flex;
         width: 73.84%;
         height: 504px;
-        @include fav-side-margin;
         flex-wrap: nowrap;
         justify-content: space-between;
 
@@ -3865,24 +2852,17 @@
             height: 375px;
         }
     
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
+        @media only screen and (min-width : 480px) and (max-width : 800px) {
+            width: 95%;
+            height: 1500px;
+            flex-direction: column;
+            flex-wrap: wrap;
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
             flex-direction: column;
             width: 100%;
             height: 1480px;
-            margin-left: auto;
-            margin-right: auto;
         }   
 
         .team_containers {
@@ -3895,22 +2875,16 @@
                 height: 385px;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include fav-side-margin;
+                width: 95%;
+                height: 500px;
+                max-width: 400px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include fav-side-margin;
                 width: 339px;
-                margin-left: auto;
-                margin-right: auto;
             }   
 
             &--icon {
@@ -3922,17 +2896,17 @@
                 position: relative;
                 z-index: 2;
 
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
+                @media only screen and (min-width : 480px) and (max-width : 1200px) {
                     display: none;
                 }
             }
             
             &--person {
+                @include fav-side-margin;
                 display: block;
                 height: 322.83px;
                 width: 77.59%;
                 margin-top: -35px;
-                @include fav-side-margin;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
                     height: 276px;
@@ -3940,15 +2914,21 @@
                     width: 210px;
                 }
 
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    height: 370px;
+                    margin-top: 0;
+                    width: 320px;
+                }
+
             }
 
             &--description {
+                @include fav-side-margin;
                 display: block;
                 height: 137px;
                 width: 66.4%;
                 margin-top: -82px;
                 z-index: 2;
-                @include fav-side-margin;
                 background: #FFFFFF;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
@@ -3956,12 +2936,12 @@
                 }
 
                 span {
+                    @include book_font (18px, 26px);
                     display: block;
                     height: 46.5px;
                     width: 100%;
                     background: #FFFFFF;
                     background-size: cover;
-                    @include book_font (18px, 26px);
                     text-align: center;
                     color: #959595;
 
@@ -3971,9 +2951,9 @@
                 }
 
                 span:first-child {
-                    padding-top: 20px;
                     @include yeseva_font (18px, 25px);
                     @include font-style-weight;
+                    padding-top: 20px;
                     text-align: center;
                     color: #181818;
 
@@ -3983,14 +2963,14 @@
                 }
 
                 span:last-child {
+                    @include yeseva_font (13px, 20px);
+                    @include font-style-weight-up;
                     display: block;
                     width: 100%;
                     height: 44px;
                     padding-top: 10px;
                     background: #E3B873;
                     background-size: cover;
-                    @include yeseva_font (13px, 20px);
-                    @include font-style-weight-up;
                     text-align: center;
                     color: #FFFFFF;
 
@@ -4013,8 +2993,8 @@
         }
 
         &--image {
-            display: block;
             @include fav-side-margin;
+            display: block;
         }
         
         &--motivate {
@@ -4029,30 +3009,17 @@
                 height: 50px;
                 width: 75%;
                 margin-top: 24.11px;
-                margin-left: auto;
-                margin-right: auto;
-                font-family: FuturaBookC, sans-serif;
-                font-size: 18px;
-                line-height: 34px;
+                @include book_font (18px, 34px);
+            }
+
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                width: 90%;
+                margin-top: 10px;
+                @include book_font (18px, 27px);
+                color: #FFFFFF;
             }
         }
 
-        @media only screen and (min-width : 800px) and (max-width : 1200px) {
-            
-        }
-    
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-            display: none;
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-            display: none;
-        }
-    
         @media screen and (min-width : 320px) and (max-width: 480px) {
             display: none;
         }
@@ -4069,19 +3036,7 @@
         height: 610px;
     }
 
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-        display: none;
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-        display: none;
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-        display: none;
-    }
-
-    @media screen and (min-width : 320px) and (max-width: 480px) {
+    @media screen and (min-width : 320px) and (max-width: 800px) {
         display: none;
     }
 
@@ -4095,19 +3050,19 @@
         }
 
         &--name {
-            display: block;
-            height: 26px;
-            width: 17.85%;
             @include fav-side-margin;
             @include yeseva_font (20px, 28px);
             @include font-style-weight-up;
+            display: block;
+            height: 26px;
+            width: 17.85%;
             text-align: center;
             color: #181818;
         }
         
         &--image {
-            display: block;
             @include fav-side-margin;
+            display: block;
             margin-top: 13.22px;
             margin-bottom: 24.16px;
 
@@ -4117,30 +3072,30 @@
         }
         
         &--slogan {
+            @include fav-side-margin;
+            @include book_font (20px, 27px);
             display: block;
             height: 57px;
             width: 27%;
-            @include fav-side-margin;
-            @include book_font (20px, 27px);
             text-align: center;
             color: #363636;
 
             @media only screen and (min-width : 800px) and (max-width : 1200px) {
+                @include book_font (18px, 27px);
                 width: 75%;
                 height: 45px;
-                @include book_font (18px, 27px);
             }
         }
     }
     
     &--real {
+        @include fav-side-margin;
         display: flex;
         flex-wrap: nowrap;
         width: 85.84%;
         height: 455.03px;
         justify-content: space-between;
         margin-top: 0;
-        @include fav-side-margin;
 
         @media only screen and (min-width : 800px) and (max-width : 1200px) {
             width: 98%;
@@ -4174,43 +3129,35 @@
             }
             
             &--name {
+                @include yeseva_font (18px, 23px);
+                @include font-style-weight;
                 display: block;
                 height: 42px;
                 width: 47.34%;
                 margin-left: 6.12%;
                 margin-right: auto;
                 margin-top: 41px;
-                @include yeseva_font (18px, 23px);
-                @include font-style-weight;
                 color: #181818;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
+                    @include yeseva_font (13px, 23px);
                     margin-top: 25px;
                     margin-left: 8.32%;
-                    @include yeseva_font (13px, 23px);
                 }
             }
             
             &--text {
+                @include fav-side-margin;
+                @include book_font (15px, 27px);
                 display: block;
                 width: 86.2%;
                 height: 221px;
-                @include fav-side-margin;
-                @include book_font (15px, 27px);
                 text-transform: lowercase;
                 color: #959595;
 
                 @media only screen and (min-width : 800px) and (max-width : 1200px) {
-                    display: block;
+                    @include book_font (14px, 21px);
                     width: 95%;
-                    height: 221px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    font-family: FuturaBookC, sans-serif;
-                    font-size: 14px;
-                    line-height: 21px;
-                    text-transform: lowercase;
-                    color: #959595;
                 }
             }
             
@@ -4238,6 +3185,7 @@
                     margin-bottom: auto;
                     object-fit: none;
                 }
+
                 span {
                     @include yeseva_font (17px, 24px);
                     @include font-style-weight-up;
@@ -4269,16 +3217,12 @@
         height: 920px;
     }
 
-    @media only screen and (min-width : 690px) and (max-width : 800px) {
-
-    }
-
-    @media only screen and (min-width : 595px) and (max-width : 690px) {
-
-    }
-
-    @media only screen and (min-width : 480px) and (max-width : 595px) {
-
+    @media only screen and (min-width : 480px) and (max-width : 800px) {
+        background-size: cover;
+        background-position: 0;
+        background: #010101;
+        background-image: none;
+        height: 910px;
     }
 
     @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -4286,17 +3230,16 @@
         height: 1055px;
         background-color: #252525;
         background-image: none;
-        background-repeat: no-repeat;
         background-size: cover;
         background-position: 0;
     }
 
     &--question {
+        @include fav-side-margin;
         display: flex;
         flex-direction: column;
         width: 61.32%;
         height: 445.32px;
-        @include fav-side-margin;
         margin-top: 48px;
         margin-bottom: 52.01px;
         background: #181818;
@@ -4304,21 +3247,16 @@
         @media only screen and (min-width : 800px) and (max-width : 1200px) {
             width: 90%;
             height: 380px;
-            @include fav-side-margin;
             margin-top: 0;
             margin-bottom: 20px;
         }
     
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
+        @media only screen and (min-width : 480px) and (max-width : 800px) {
+            width: 100%;
+            height: 375px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            background: #010101;
         }
     
         @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -4330,12 +3268,12 @@
         }
 
         &--title {
+            @include yeseva_font (20px, 28px);
+            @include font-style-weight-up;
             width: 100%;
             height: 26px;
             margin-top: 34.4px;
             margin-bottom: 45.8px;
-            @include yeseva_font (20px, 28px);
-            @include font-style-weight-up;
             text-align: center;
             color: #FFFFFF;
 
@@ -4344,81 +3282,38 @@
                 margin-bottom: 20px;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                @include yeseva_font (22px, 37px);
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include fav-side-margin;
                 width: 257px;
-                height: 26px;
-                margin-left: auto;
-                margin-right: auto;
                 margin-top: 67px;
                 margin-bottom: 52px;
-                @include yeseva_font (20px, 28px);
-                @include font-style-weight-up;
-                text-align: center;
-                color: #FFFFFF;
             }
         }
 
         &--form {
+            @include fav-side-margin;
             width: 58.9%;
             height: 376.52px;
-            @include fav-side-margin;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
 
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
+            @media only screen and (min-width : 480px) and (max-width : 1200px) {
                 width: 80%;
-            }
-        
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
                 width: 340px;
                 height: 419px;
-                @include fav-side-margin;
             }
 
             &--item {
                 height: 45.05px;
                 width: 44.43%;
-
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
-                }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
                     height: 45px;
@@ -4430,22 +3325,6 @@
                     @include book_font (15px, 20px);
                     color: rgba(255, 255, 255, 0.5);
                     transform: rotate(-0.07deg);
-
-                    @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                    }
-                
-                    @media only screen and (min-width : 690px) and (max-width : 800px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 595px) and (max-width : 690px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 480px) and (max-width : 595px) {
-                
-                    }
                 
                     @media screen and (min-width : 320px) and (max-width: 480px) {
                         @include book_font (15px, 20px);
@@ -4454,8 +3333,8 @@
                 }
     
                 input {
-                    display: block;
                     @include book_font (18px, 24px);
+                    display: block;
                     color: #FFFFFF;
                     background: #181818;
                     outline: 0;
@@ -4464,20 +3343,8 @@
                     border-color: rgba(54, 54, 54, 0.3);
                     float: left;
 
-                    @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                    }
-                
-                    @media only screen and (min-width : 690px) and (max-width : 800px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 595px) and (max-width : 690px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 480px) and (max-width : 595px) {
-                
+                    @media only screen and (min-width : 480px) and (max-width : 800px) {
+                        background: #010101;
                     }
                 
                     @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -4489,22 +3356,6 @@
             &--asking {
                 height: 45px;
                 width: 100%;
-
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
-                }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
                     margin-bottom: 29px;
@@ -4517,8 +3368,8 @@
                 }
     
                 input {
-                    display: block;
                     @include book_font (18px, 24px);
+                    display: block;
                     color: #FFFFFF;
                     background: #181818;
                     outline: 0;
@@ -4526,23 +3377,11 @@
                     border-width: 0 0 2px;
                     border-color: rgba(54, 54, 54, 0.3);
                     float: left;
+                
+                    @media only screen and (min-width : 480px) and (max-width : 800px) {
+                        background: #010101;
+                    }
 
-                    @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                    }
-                
-                    @media only screen and (min-width : 690px) and (max-width : 800px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 595px) and (max-width : 690px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 480px) and (max-width : 595px) {
-                
-                    }
-                
                     @media screen and (min-width : 320px) and (max-width: 480px) {
                         background: #252525;
                     }
@@ -4550,32 +3389,19 @@
             }
 
             &--agree {
+                @include fav-side-margin;
                 display: flex;
                 color: #FFFFFF;
                 width: 54%;
                 height: 49px;
-                @include fav-side-margin;
                 justify-content: space-around;
                 align-items: center;
 
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    width: 70%;
                 }
             
                 @media screen and (min-width : 320px) and (max-width: 480px) {
-                    color: #FFFFFF;
                     width: 300px;
                     height: 18px;
                     margin-left: 0;
@@ -4583,8 +3409,8 @@
                 }
 
                 label {
-                    display: block;
                     @include book_font (16px, 22px);
+                    display: block;
                     color: rgba(255, 255, 255, 0.5);
                     height: 17px;
                     width: 89%;
@@ -4601,22 +3427,6 @@
                     height: 18px;
                     border-width: 0 0 2px;
                     border-color: rgba(54, 54, 54, 0.3);
-
-                    @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-                    }
-                
-                    @media only screen and (min-width : 690px) and (max-width : 800px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 595px) and (max-width : 690px) {
-                
-                    }
-                
-                    @media only screen and (min-width : 480px) and (max-width : 595px) {
-                
-                    }
                 
                     @media screen and (min-width : 320px) and (max-width: 480px) {
                         width: 18px;
@@ -4626,6 +3436,7 @@
             }
 
             &--submit {
+                @include demic_font (15px, 26px);
                 display: block;
                 height: 51px;
                 width: 38.46%;
@@ -4635,32 +3446,19 @@
                 background: #E3B873;
                 box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
                 border-radius: 2px;
-                @include demic_font (15px, 26px);
                 text-align: center;
                 text-transform: uppercase;
                 color: #FFFFFF;
 
-                @media only screen and (min-width : 800px) and (max-width : 1200px) {
+                @media only screen and (min-width : 480px) and (max-width : 800px) {
+                    height: 45px;
+                    width: 50%;
+                }
 
-                }
-            
-                @media only screen and (min-width : 690px) and (max-width : 800px) {
-            
-                }
-            
-                @media only screen and (min-width : 595px) and (max-width : 690px) {
-            
-                }
-            
-                @media only screen and (min-width : 480px) and (max-width : 595px) {
-            
-                }
-            
                 @media screen and (min-width : 320px) and (max-width: 480px) {
+                    @include fav-side-margin;
                     width: 340px;
                     height: 51px;
-                    @include fav-side-margin;
-                    text-align: center;
                 }
             }
 
@@ -4671,64 +3469,39 @@
     }
 
     &--address {
+        @include fav-side-margin;
         display: flex;
         flex-direction: column;
         height: 629px;
         width: 100%;
-        @include fav-side-margin;
         text-align: center;
     
-        @media only screen and (min-width : 690px) and (max-width : 800px) {
-    
-        }
-    
-        @media only screen and (min-width : 595px) and (max-width : 690px) {
-    
-        }
-    
-        @media only screen and (min-width : 480px) and (max-width : 595px) {
-    
-        }
-    
         @media screen and (min-width : 320px) and (max-width: 480px) {
-            display: flex;
             flex-direction: column-reverse;
             height: 470px;
             width: 100%;
-            @include fav-side-margin;
-            text-align: center;
             justify-content: space-evenly;
             padding-bottom: 10px;
         }
 
         &--law {
-            display: block;
-            width: 589px;
-            height: 52px;
             @include fav-side-margin;
             @include yeseva_font (20px, 28px);
             @include font-style-weight-up;
+            display: block;
+            width: 589px;
+            height: 52px;
             color: #E3B873;
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                width: 90%;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
+                @include yeseva_font (18px, 25px);
                 width: 332px;
                 height: 70.56px;
-                @include yeseva_font (18px, 25px);
-                @include font-style-weight-up;
                 text-align: center;
-                color: #E3B873;
             }
 
             a {
@@ -4737,28 +3510,17 @@
         }
 
         &--link {
+            @include fav-side-margin;
             margin-top: 25px;
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
             width: 5%;
             height: 30px;
-            @include fav-side-margin;
 
-            @media only screen and (min-width : 800px) and (max-width : 1200px) {
-
-            }
-        
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                width: 20%;
+                max-width: 80px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
@@ -4772,34 +3534,26 @@
         }
 
         &--map {
+            @include fav-side-margin;
             height: 465px;
             width: 925px;
-            @include fav-side-margin;
             margin-top: 51.04px;
 
             @media only screen and (min-width : 800px) and (max-width : 1200px) {
                 height: 355px;
                 width: 750px;
-                @include fav-side-margin;
                 margin-top: 20px;
             }
         
-            @media only screen and (min-width : 690px) and (max-width : 800px) {
-        
-            }
-        
-            @media only screen and (min-width : 595px) and (max-width : 690px) {
-        
-            }
-        
-            @media only screen and (min-width : 480px) and (max-width : 595px) {
-        
+            @media only screen and (min-width : 480px) and (max-width : 800px) {
+                width: 90%;
+                height: 350px;
+                margin-top: 30px;
             }
         
             @media screen and (min-width : 320px) and (max-width: 480px) {
                 height: 255px;
                 width: 320px;
-                @include fav-side-margin;
                 margin-top: 0;
             }
         }
@@ -4820,11 +3574,7 @@
         height: 75px;
     }
 
-    @media only screen and (min-width : 480px) and (max-width : 800px) {
-        display: none;
-    }
-
-    @media screen and (min-width : 320px) and (max-width: 480px) {
+    @media only screen and (min-width : 320px) and (max-width : 800px) {
         display: none;
     }
 
@@ -4834,9 +3584,7 @@
         color: #E3B873;
 
         @media only screen and (min-width : 800px) and (max-width : 1200px) {
-            font-family: FuturaDemiC, sans-serif;
-            font-size: 13px;
-            line-height: 16px;
+            @include demic_font (13px, 16px);
         }
     }
 }
